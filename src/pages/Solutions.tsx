@@ -6,7 +6,7 @@ import { Footer } from '../components/landing/Footer';
 
 export const Solutions = () => {
   return (
-    <div className="min-h-screen bg-[#050709] text-[#F9F9F9] flex flex-col font-sans">
+    <div className=" bg-[#050709] text-[#F9F9F9] flex flex-col font-sans">
       <Navbar />
       <main className="flex-grow flex flex-col items-center w-full">
         <HeroSolutions />

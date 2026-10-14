@@ -4,13 +4,14 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full flex justify-center p-6 mt-10 font-sans">
-    
+    <div className="w-full flex justify-center p-6 mt-10 font-sans overflow-hidden">
+      
       <div className="w-full max-w-[1300px] relative">
       
-        <div className="absolute -top-16 -left-16 w-80 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute -bottom-1 -left-26 w-90 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
         
-        <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute -bottom-16 -right-17 w-90 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
+        
         <footer className="relative z-10 w-full bg-[#050709] border border-white/5 rounded-3xl py-12 px-8 md:px-16 flex flex-col shadow-2xl">
           
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-8 mb-16">
@@ -28,26 +29,20 @@ export const Footer = () => {
             </div>
 
             <div className="flex flex-col gap-5">
-             
               <h4 className="text-lg font-bold leading-7 text-[#A1A8B0] tracking-wider">{t('footer.product')}</h4>
-          
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.solutions')}</a>
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.integrations')}</a>
             </div>
 
             <div className="flex flex-col gap-5">
-            
               <h4 className="text-lg font-bold leading-7 text-[#A1A8B0] tracking-wider">{t('footer.company')}</h4>
-              
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.aboutUs')}</a>
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.investors')}</a>
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.contact')}</a>
             </div>
 
             <div className="flex flex-col gap-5">
-          
               <h4 className="text-lg font-bold leading-7 text-[#A1A8B0] tracking-wider">{t('footer.legal')}</h4>
-              
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.privacy')}</a>
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.terms')}</a>
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.cookies')}</a>
