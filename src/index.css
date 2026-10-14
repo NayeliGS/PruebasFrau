@@ -4,3 +4,6 @@
 @theme {
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 }
+body, html {
+  overflow-x: hidden;
+}
