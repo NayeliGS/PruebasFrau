@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 
 // Icono de Check en Future Green (#10F5C4) [cite: 2]
 const CheckIcon = () => (
