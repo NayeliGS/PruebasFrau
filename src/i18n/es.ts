@@ -107,4 +107,22 @@ export const es = {
     buttonSales: "Hablar con un asesor",
     disclaimer: "Sin tarjeta de crédito. Análisis gratuito de fraude."
   },
-};
+  accessibility: {
+    title: "Accesibilidad",
+    highContrast: "Alto Contraste",
+    contrastPlus: "Contraste +",
+    largeText: "Texto Grande",
+    textSpacing: "Espaciado de Texto",
+    dyslexiaFont: "Fuente Dislexia",
+    colorSaturation: "Saturación",
+    tooltips: "Información",
+    lineHeight: "Altura de Línea",
+    stopAnimations: "Detener Animaciones",
+    alignment: "Alineación",
+    align_left: "I",
+    align_center: "C",
+    align_right: "D",
+    align_justify: "J",
+    openMenu: "Abrir menú de accesibilidad"
+  },
+}

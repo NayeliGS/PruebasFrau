@@ -3,6 +3,7 @@ import { HeroSolutions } from '../components/landing/HeroSolutions';
 import { SolutionsCatalog } from '../components/landing/SolutionsCatalog';
 import { PilotCTA } from '../components/landing/PilotCTA';
 import { Footer } from '../components/landing/Footer';
+import { AccessibilityMenu } from '../components/AccessibilityMenu';
 
 export const Solutions = () => {
   return (
@@ -12,6 +13,8 @@ export const Solutions = () => {
         <HeroSolutions />
         <SolutionsCatalog />
         <PilotCTA />
+        <AccessibilityMenu />
+        
       </main>
       <Footer />
     </div>
