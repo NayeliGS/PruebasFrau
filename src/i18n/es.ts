@@ -101,12 +101,13 @@ export const es = {
     }
   },
   pilotCta: {
-    title: "Empieza con un piloto, no con un contrato",
-    subtitle: "Conectamos en modo observador sobre tu tráfico real: ves las decisiones que FraudEG habría tomado, sin bloquear nada.",
-    buttonPilot: "Solicitar piloto",
-    buttonSales: "Hablar con un asesor",
-    disclaimer: "Sin tarjeta de crédito. Análisis gratuito de fraude."
-  },
+  "title": "Empieza con un piloto, no con un contrato",
+  "subtitle1": "Conectamos en modo observador sobre tu tráfico real: ves las decisiones que FraudEG",
+  "subtitle2": "habría tomado, sin bloquear nada.",
+  "buttonPilot": "Solicitar piloto",
+  "buttonSales": "Hablar con un asesor",
+  "disclaimer": "Sin tarjeta de crédito. Análisis gratuito de fraude."
+},
   accessibility: {
     title: "Accesibilidad",
     highContrast: "Alto Contraste",

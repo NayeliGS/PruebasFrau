@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import FraudEGBackground from './FraudEGBackground'; // Asegúrate de que el nombre del archivo coincida
 
 export const HeroSolutions = () => {
   const { t } = useTranslation();
@@ -13,10 +14,9 @@ export const HeroSolutions = () => {
   return (
     <section className="w-full flex flex-col items-center mt-20 font-sans relative pb-16 px-6">
       
-      <div className="w-[300px] md:w-[500px] h-[120px] border-2 border-[#10F5C4]/30 bg-[#10F5C4]/5 rounded-2xl flex items-center justify-center mb-10">
-        <span className="text-[#10F5C4] font-semibold tracking-widest uppercase text-sm">
-          [ Animación ]
-        </span>
+      {/* Contenedor de la Animación Inyectada */}
+      <div className="w-full max-w-[600px] h-[360px] flex items-center justify-center mb-10 overflow-hidden relative rounded-2xl">
+        <FraudEGBackground />
       </div>
       
       <p className="text-gray-400 text-center max-w-3xl text-xl font-medium leading-7 mb-12">
