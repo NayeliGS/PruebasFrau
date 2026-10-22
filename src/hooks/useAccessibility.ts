@@ -9,7 +9,7 @@ export interface AccessibilitySettings {
   colorSaturation: boolean;
   lineHeight: boolean;
   tooltips: boolean;
-  alignment: string;
+  alignment: '' | 'left' | 'center' | 'right' | 'justify'; // Tipado estricto
   stopAnimations: boolean;
 }
 
@@ -22,13 +22,14 @@ const INITIAL_SETTINGS: AccessibilitySettings = {
   colorSaturation: false,
   lineHeight: false,
   tooltips: false,
-  alignment: 'left',
+  alignment: '', // <-- Se deja vacío para quitar la selección predeterminada
   stopAnimations: false,
 };
 
 export const useAccessibility = () => {
   const [settings, setSettings] = useState<AccessibilitySettings>(() => {
-    const saved = localStorage.getItem('accessibility_settings');
+    // Usamos v3 para evadir cualquier caché corrupto anterior automáticamente
+    const saved = localStorage.getItem('accessibility_prefs_v3');
     return saved ? JSON.parse(saved) : INITIAL_SETTINGS;
   });
 
@@ -92,7 +93,8 @@ export const useAccessibility = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem('accessibility_settings', JSON.stringify(settings));
+    // Guardamos en la nueva llave v3
+    localStorage.setItem('accessibility_prefs_v3', JSON.stringify(settings));
     applyStyles(settings);
   }, [settings]);
 

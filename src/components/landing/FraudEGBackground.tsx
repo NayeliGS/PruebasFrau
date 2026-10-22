@@ -920,7 +920,7 @@ export default function FraudEGBackground() {
       aria-label="FraudEG. Exchange Guard."
     >
       <img
-        src="/public/Fraudeg.svg"
+        src="/Fraudeg.svg"
         alt=""
         className="absolute top-[28%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[clamp(180px,32vw,380px)] h-auto z-[2] pointer-events-none select-none"
         aria-hidden="true"

@@ -30,7 +30,7 @@ export const es = {
     copyright: "© 2026 FraudEG. Todos los derechos reservados"
   },
   hero: {
-    subtitle: "Nuestras soluciones funcionan con Exchange Guard, nuestro motor propio de inteligencia artificial principal para proteger negocios online.",
+    subtitle: "Exchange Guard es la inteligencia artificial propia de FraudEG, creada solo para un objetivo: proteger tu intercambio de valor digital. Funciona como un solo motor, con una sola integración. Entiende el origen de cada transacción, decide en tiempo real y aprende de cada interacción para que pierdas menos y apruebes más",
     tab1: "Historical Tracker",
     tab2: "Real Time Inspector",
     tab3: "Smart Monitor",
