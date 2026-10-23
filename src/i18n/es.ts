@@ -136,4 +136,8 @@ export const es = {
     align_justify: "J",
     openMenu: "Abrir menú de accesibilidad"
   },
+  about: {
+  heroTitle: "Construimos el futuro de la confianza transaccional convertirnos en la capa de inteligencia de los sistemas transaccionales, donde cada transacción se evalúa, entiende y optimiza en tiempo real.",
+  heroBtn: "Habla con nuestro equipo"
+},
 }
