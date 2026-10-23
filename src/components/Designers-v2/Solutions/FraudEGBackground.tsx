@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 
-import fraudegLogo from "/Fraudeg.svg";
+import fraudegLogo from "/designersV2/Fraudeg.svg";
 
 const COLORS = {
   background: "#0B0E12",
