@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 
-
 import fraudegLogo from "/designersV2/Fraudeg.svg";
 
 const COLORS = {
