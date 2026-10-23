@@ -137,7 +137,14 @@ export const es = {
     openMenu: "Abrir menú de accesibilidad"
   },
   about: {
-  heroTitle: "Construimos el futuro de la confianza transaccional convertirnos en la capa de inteligencia de los sistemas transaccionales, donde cada transacción se evalúa, entiende y optimiza en tiempo real.",
-  heroBtn: "Habla con nuestro equipo"
-},
-}
+    heroTitle: "Construimos el futuro de la confianza transaccional convertirnos en la capa de inteligencia de los sistemas transaccionales, donde cada transacción se evalúa, entiende y optimiza en tiempo real.",
+    heroBtn: "Habla con nuestro equipo",
+    mission: {
+      card1: "Una capa central del ciclo transaccional, no un dashboard encima.",
+      card2: "Modelos que mejoran continuamente con cada transacción procesada.",
+      title: "La prevención de fraude no debería ser reactiva, fragmentada ni estática.",
+      subtitle: "Nuestra misión a largo plazo es convertirnos en la capa de inteligencia de los sistemas transaccionales, donde cada transacción se evalúa, entiende y optimiza en tiempo real.",
+      btn: "Cómo funciona"
+    },
+  },
+  }
