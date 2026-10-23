@@ -8,7 +8,7 @@ export const PilotCTA = () => {
       <div 
         className="w-full max-w-[1300px] relative overflow-hidden rounded-[2.5rem] py-24 px-6 md:px-12 flex flex-col items-center shadow-2xl bg-cover bg-center"
         style={{
-          backgroundImage: "url('/CTA Section.png')"
+          backgroundImage: "url('/designersV2/CTA Section.png')"
         }}
       >
         <div className="relative z-10 w-full max-w-5xl flex flex-col items-center">
