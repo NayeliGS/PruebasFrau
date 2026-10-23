@@ -30,21 +30,31 @@ export const es = {
     copyright: "© 2026 FraudEG. Todos los derechos reservados"
   },
   hero: {
-    subtitle: "Exchange Guard es la inteligencia artificial propia de FraudEG, creada solo para un objetivo: proteger tu intercambio de valor digital. Funciona como un solo motor, con una sola integración. Entiende el origen de cada transacción, decide en tiempo real y aprende de cada interacción para que pierdas menos y apruebes más",
-    tab1: "Historical Tracker",
-    tab2: "Real Time Inspector",
-    tab3: "Smart Monitor",
-    tab4: "Fraud Intelligence"
-  },
+  animationText: "El motor detrás de fraudeg",
+  topText1: "Cuatro soluciones. Un mismo motor.",
+  topText2: "Revisa el pasado, decide en el presente, anticipa lo que viene y descubre lo que está conectado:",
+  subtitle: "Exchange Guard es la inteligencia artificial propia de FraudEG, creada solo para un objetivo: proteger tu intercambio de valor digital. Funciona como un solo motor, con una sola integración. Entiende el origen de cada transacción, decide en tiempo real y aprende de cada interacción para que pierdas menos y apruebes más",
+  controlText: "Deja de detectar el fraude. Empieza a controlarlo.",
+  btnSecondary: "Ver como funciona",
+  btnPrimary: "Solicitar piloto SIN COSTO",
+  pilotDisclaimer: "Piloto en modo observador sobre tu tráfico real · Sin tarjeta · Sin compromiso",
+  tab1: "Historical Tracker",
+  tab2: "Real Time Inspector",
+  tab3: "Smart Monitor",
+  tab4: "Fraud Intelligence"
+},
   solutionsCatalog: {
     batch: {
-      title: "Retrospectiva y por lotes",
-      description: "Cuando necesitas pruebas, calibración o revisar el pasado, Historical Track reproduce transacciones con la misma lógica que usas en producción.",
+      title: "HISTORICAL TRACKER",
+      subtitle: "Aprende del pasado antes de arriesgar tu futuro",
+      description: "Prueba cualquier cambio de reglas o límites sobre tus transacciones reales antes de publicarlo. Historical Tracker repite tu historial con la misma lógica de Exchange Guard que opera en producción. Sabrás de antemano cuánto fraude habrías detenido y cuántos clientes buenos habrías aprobado.",
+      subtitleAccion: "Descubre cuánto fraude se le escapó a tu operación el último mes →",
+      subtitleAccion2: "Lo medimos en tu piloto SIN COSTO, con tus propios datos.",
       bullets: [
-        "Pruebas y calibración histórica antes de aplicar cambios en los límites.",
-        "Exportaciones de datos para investigación que incluyen calificaciones, límites y motivos.",
-        "Vistas de grupos (cohortes) organizadas por velocidad, geografía y herramientas.",
-        "Lotes fuera de línea (offline) que heredan tus reglas de seguridad para mantener la coherencia con las decisiones en vivo."
+        "Cambia reglas sin miedo: mide el impacto de cada ajuste antes de llevarlo a producción.",
+        "Auditorías resueltas en horas, no en semanas: exporta evidencia lista con puntajes, límites y motivos de cada decisión.",
+        "Encuentra dónde se te escapa el fraude: analiza grupos por velocidad, geografía y canal para ver patrones que el día a día no muestra.",
+        "Lo que pruebas es lo que obtienes: los análisis por lotes usan tus mismas reglas de seguridad, así que los resultados coinciden con lo que vivirás en vivo."
       ],
       mockup: {
         title: "Cobertura de alertamiento",

@@ -1,40 +1,52 @@
 import { useTranslation } from 'react-i18next';
+// 1. Importamos Link de react-router-dom
+import { Link, useLocation } from 'react-router-dom'; 
 
 export const Navbar = () => {
   const { t } = useTranslation();
+  // Extra opcional: usar useLocation para saber en qué página estamos y pintar el botón de verde
+  const location = useLocation();
 
+  // 2. Agregamos las propiedades 'href'
   const navLinks = [
-    { id: 'home', name: t('navbar.home'), isActive: false },
-    { id: 'solutions', name: t('navbar.solutions'), isActive: true },
-    { id: 'plans', name: t('navbar.plans'), isActive: false },
-    { id: 'about', name: t('navbar.aboutUs'), isActive: false },
-    { id: 'blog', name: t('navbar.blog'), isActive: false },
+    { id: 'home', name: t('navbar.home'), href: '/' },
+    { id: 'solutions', name: t('navbar.solutions'), href: '/soluciones' },
+    { id: 'plans', name: t('navbar.plans'), href: '/planes' },
+    { id: 'about', name: t('navbar.aboutUs'), href: '/sobre-nosotros' },
+    { id: 'blog', name: t('navbar.blog'), href: '/blog' },
   ];
 
   return (
-    <div className="sticky top-0 z-50 w-full flex justify-center p-6">
+    <div className="sticky top-0 z-50 bg-[#0B0E12] w-full flex justify-center p-6">
       <nav className="w-full max-w-[1300px] h-[64px] bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl flex items-center justify-between px-6 md:px-8 font-sans">
         
         <div className="flex items-center gap-2 cursor-pointer">
-          <span className="text-[#F9F9F9] font-bold text-xl tracking-wide">
+          {/* 3. El logo te lleva al inicio */}
+          <Link to="/" className="text-[#F9F9F9] font-bold text-xl tracking-wide hover:opacity-80 transition-opacity">
             Fraud<span className="text-[#10F5C4]">EG</span>
-          </span>
+          </Link>
         </div>
         
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.id}
-              href="#"
-              className={`text-lg font-medium transition-colors ${
-                link.isActive 
-                  ? 'text-[#10F5C4]' 
-                  : 'text-[#F9F9F9] hover:text-[#10F5C4]'
-              }`}
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            // Evaluamos si el usuario está en esta ruta para iluminar el botón
+            const isActive = location.pathname === link.href || (location.pathname === '/' && link.href === '/soluciones');
+            
+            return (
+              // 4. Cambiamos <a> por <Link>
+              <Link
+                key={link.id}
+                to={link.href}
+                className={`text-lg font-medium transition-colors ${
+                  isActive 
+                    ? 'text-[#10F5C4]' 
+                    : 'text-[#F9F9F9] hover:text-[#10F5C4]'
+                }`}
+              >
+                {link.name}
+              </Link>
+            )
+          })}
         </div>
         
         <div className="flex items-center gap-6">

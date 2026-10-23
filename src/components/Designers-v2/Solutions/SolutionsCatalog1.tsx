@@ -39,6 +39,9 @@ const BatchCard = () => {
           <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] mb-4">
             {t('solutionsCatalog.batch.title')}
           </h2>
+          <h3 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] mb-4">
+            {t('solutionsCatalog.batch.subtitle')}
+          </h3>
           <p className={`mb-8 text-lg font-medium leading-7 transition-colors duration-[5000ms] ${isVisible ? 'text-gray-300' : 'text-gray-800'}`}>
             {t('solutionsCatalog.batch.description')}
           </p>
@@ -54,6 +57,12 @@ const BatchCard = () => {
               </li>
             ))}
           </ul>
+          <h3 className="text-[17px] font-bold leading-[46px] text-[#10F5C4] tracking-[-0.01em] mt-4 ">
+            {t('solutionsCatalog.batch.subtitleAccion')}
+          </h3>
+          <h4 className="text-[14px] font-normal  text-gray-300 tracking-[-0.01em]  mb-4">
+            {t('solutionsCatalog.batch.subtitleAccion2')}
+          </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
           <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-green-300 via-teal-400 to-cyan-300 shadow-inner"></div>

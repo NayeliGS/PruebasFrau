@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react";
 
+
+import fraudegLogo from "/Fraudeg.svg";
+
 const COLORS = {
-  background: "#000000",
+  background: "#0B0E12",
   green: "#10F5C4",
   particle: "#FFFFFF",
 } as const;
@@ -920,9 +923,9 @@ export default function FraudEGBackground() {
       aria-label="FraudEG. Exchange Guard."
     >
       <img
-        src="/Fraudeg.svg"
+        src={fraudegLogo}
         alt=""
-        className="absolute top-[28%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[clamp(180px,32vw,380px)] h-auto z-[2] pointer-events-none select-none"
+        className="absolute top-[28%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[clamp(280px,32vw,460px)] h-auto z-[2] pointer-events-none select-none"
         aria-hidden="true"
       />
       <canvas
