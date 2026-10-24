@@ -1,5 +1,4 @@
 import { Navbar } from "../components/Designers-v2/Shared/Navbar";
-import { HeroSolutions } from "../components/Designers-v2/Solutions/HeroSolutions";
 import { Footer } from "../components/Designers-v2/Shared/Footer";
 import { TypographyCatalog } from "../components/Designers-v2/FontsPrueba/TypographyCatalog";
 
