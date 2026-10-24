@@ -4,6 +4,7 @@ import { AccessibilityMenu } from "../components/Designers-v2/Shared/Accessibili
 // Importamos nuestro nuevo componente modular
 import { HeroAbout } from "../components/Designers-v2/AboutUs/HeroAbout";
 import { FoundersAbout } from "../components/Designers-v2/AboutUs/FoundersAbout";
+import { PartnersAbout } from "../components/Designers-v2/AboutUs/PartnersAbout";
 
 export const AboutUsV2 = () => {
   return (
@@ -18,6 +19,7 @@ export const AboutUsV2 = () => {
         {/* Aquí inyectamos el primer bloque */}
         <HeroAbout />
         <FoundersAbout />
+        <PartnersAbout/>
         
         {/* Aquí irán los siguientes componentes (ej. Misión, Equipo, Valores) */}
 

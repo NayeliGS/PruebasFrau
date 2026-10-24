@@ -33,14 +33,14 @@ export const FoundersAbout = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#0B0E12] font-sans  pb-48 px-6 overflow-hidden">
+    <section className="relative w-full bg-[#0B0E12] font-sans  pb-4 px-6 overflow-hidden">
       
       {/* Fondo con la imagen de puntos */}
       <div 
         className="absolute inset-0 z-0 opacity-40 bg-cover bg-no-repeat"
         style={{ 
           backgroundImage: "url('/designersV2/FondoWe.png')",
-          backgroundPosition: "center -200px" 
+          backgroundPosition: "center -1000px" 
         }}
       ></div>
 
@@ -126,7 +126,6 @@ export const FoundersAbout = () => {
           {(t('about.team.members', { returnObjects: true }) as Array<{name: string, role: string}>).map((member, index) => (
             <div key={index} className="flex flex-col items-center group cursor-pointer">
               
-              {/* Contenedor circular para la foto temporal */}
               <div className="w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden mb-5 border border-white/10 shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:border-[#10F5C4]/50">
                 <img 
                   src="/designersV2/AboutUs_Team.png" 
@@ -140,6 +139,55 @@ export const FoundersAbout = () => {
               
             </div>
           ))}
+        </div>
+
+        {/* --- SECCIÓN 3: BOARD OF ADVISORS --- */}
+        <div className="w-full bg-[#EAF2ED] rounded-[3rem] mt-37 p-10 md:p-30 flex flex-col items-center">
+          
+          <h3 className="text-[#10151B] text-center font-bold text-[36px] md:text-[44px] leading-tight tracking-[-0.01em] mb-2">
+            {t('about.advisors.title')}
+          </h3>
+          <p className="text-[#475467] text-center font-medium text-[16px] md:text-[18px] max-w-2xl leading-relaxed mb-14">
+            {t('about.advisors.subtitle')}
+          </p>
+
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            
+            {/* Advisor 1: Carlos */}
+            <div className="flex flex-col w-full">
+              <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6">
+                <img 
+                  src="/designersV2/AboutUS_Advisors1.png" 
+                  alt={t('about.advisors.carlos.name')} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-[#10151B] font-bold text-[24px] mb-3">
+                {t('about.advisors.carlos.name')}
+              </h4>
+              <p className="text-[#475467] font-medium text-[14px] leading-[22px]">
+                {t('about.advisors.carlos.desc')}
+              </p>
+            </div>
+
+            {/* Advisor 2: Emily */}
+            <div className="flex flex-col w-full">
+              <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6">
+                <img 
+                  src="/designersV2/AboutUS_Advisors2.png" 
+                  alt={t('about.advisors.emily.name')} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-[#10151B] font-bold text-[24px] mb-3">
+                {t('about.advisors.emily.name')}
+              </h4>
+              <p className="text-[#475467] font-medium text-[14px] leading-[22px]">
+                {t('about.advisors.emily.desc')}
+              </p>
+            </div>
+
+          </div>
         </div>
 
       </div>

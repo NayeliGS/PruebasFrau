@@ -179,5 +179,38 @@ export const es = {
         { name: "David", role: "Marketing Specialist" }
       ],
     },
+    advisors: {
+      title: "Board of Advisors",
+      subtitle: "El Board of Advisors está formado por miembros procedentes de reconocidas organizaciones e industrias globales.",
+      carlos: {
+        name: "Carlos Rojas",
+        desc: "Ingeniero de software (ex Google, Disney, Globant, Ontop) especializado en sistemas escalables, arquitecturas distribuidas y seguridad global. Impacto en más de 60 países y más de 160M de usuarios—incluso el Super Bowl. Profundamente apasionado por la computación, la enseñanza y la construcción de sistemas que permiten a los equipos crecer y rendir al máximo."
+      },
+      emily: {
+        name: "Emily Rodriguez",
+        desc: "Ingeniero de software (ex Google, Disney, Globant, Ontop) especializado en sistemas escalables, arquitecturas distribuidas y seguridad global. Impacto en más de 60 países y más de 160M de usuarios—incluso el Super Bowl. Profundamente apasionado por la computación, la enseñanza y la construcción de sistemas que permiten a los equipos crecer y rendir al máximo."
+      },
+    },
+    partners: {
+      title: "Aliados\nEstratégicos",
+      subtitle: "Respaldados por\nlos mejores",
+      partner1: {
+        name: "Grupo Bancolombia",
+        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
+      },
+      partner2: {
+        name: "Grupo Bancolombia",
+        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
+      },
+      partner3: {
+        name: "Grupo Bancolombia",
+        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
+      },
+      partner4: {
+        name: "Grupo Bancolombia",
+        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
+      },
+    },
   },
   }
+  
