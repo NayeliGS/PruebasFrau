@@ -1,19 +1,17 @@
 import { useTranslation } from 'react-i18next';
-// 1. Importamos Link de react-router-dom
 import { Link, useLocation } from 'react-router-dom'; 
 
 export const Navbar = () => {
   const { t } = useTranslation();
-  // Extra opcional: usar useLocation para saber en qué página estamos y pintar el botón de verde
   const location = useLocation();
 
-  // 2. Agregamos las propiedades 'href'
   const navLinks = [
     { id: 'home', name: t('navbar.home'), href: '/' },
     { id: 'solutions', name: t('navbar.solutions'), href: '/soluciones' },
     { id: 'plans', name: t('navbar.plans'), href: '/planes' },
     { id: 'about', name: t('navbar.aboutUs'), href: '/sobre-nosotros' },
     { id: 'blog', name: t('navbar.blog'), href: '/blog' },
+    { id: 'fonts', name: 'Fonts', href: '/fonts' }, // Enlace agregado para el catálogo tipográfico
   ];
 
   return (
@@ -21,7 +19,6 @@ export const Navbar = () => {
       <nav className="w-full max-w-[1300px] h-[64px] bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl flex items-center justify-between px-6 md:px-8 font-sans">
         
         <div className="flex items-center gap-2 cursor-pointer">
-          {/* 3. El logo te lleva al inicio */}
           <Link to="/" className="text-[#F9F9F9] font-bold text-xl tracking-wide hover:opacity-80 transition-opacity">
             Fraud<span className="text-[#10F5C4]">EG</span>
           </Link>
@@ -29,11 +26,9 @@ export const Navbar = () => {
         
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {
-            // Evaluamos si el usuario está en esta ruta para iluminar el botón
             const isActive = location.pathname === link.href || (location.pathname === '/' && link.href === '/soluciones');
             
             return (
-              // 4. Cambiamos <a> por <Link>
               <Link
                 key={link.id}
                 to={link.href}
