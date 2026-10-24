@@ -58,8 +58,7 @@ export const AccessibilityMenu = () => {
               </span>
               <div className="flex justify-between gap-2">
                 {/* 👇 Corrección: Se agregó 'as const' para tipado estricto */}
-                {(["left", "center", "right", "justify"] as const).map(
-                  (align) => (
+                {(['left', 'center', 'right', 'justify'] as const).map((align) => (
                     <button
                       key={align}
                       onClick={() => toggleSetting("alignment", align)}
