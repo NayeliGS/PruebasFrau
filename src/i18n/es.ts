@@ -8,7 +8,7 @@ export const es = {
     home: "Inicio",
     solutions: "Soluciones",
     plans: "Planes",
-    aboutUs: "Sobre Nosotros",
+    aboutUs: "Nosotros",
     blog: "Blog",
     requestPilot: "Solicitar Piloto"
   },
@@ -19,7 +19,7 @@ export const es = {
     solutions: "Soluciones",
     integrations: "Integraciones",
     company: "Compañía",
-    aboutUs: "Sobre Nosotros",
+    aboutUs: "Nosotros",
     investors: "Inversionistas",
     contact: "Contacto",
     legal: "Legal",
@@ -111,12 +111,12 @@ export const es = {
     }
   },
   pilotCta: {
-  "title": "Empieza con un piloto, no con un contrato",
-  "subtitle1": "Conectamos en modo observador sobre tu tráfico real: ves las decisiones que FraudEG",
-  "subtitle2": "habría tomado, sin bloquear nada.",
-  "buttonPilot": "Solicitar piloto",
-  "buttonSales": "Hablar con un asesor",
-  "disclaimer": "Sin tarjeta de crédito. Análisis gratuito de fraude."
+  title: "Empieza con un piloto, no con un contrato",
+  subtitle1: "Conectamos en modo observador sobre tu tráfico real: ves las decisiones que FraudEG",
+  subtitle2: "habría tomado, sin bloquear nada.",
+  buttonPilot: "Solicitar piloto",
+  buttonSales: "Hablar con un asesor",
+  disclaimer: "Sin tarjeta de crédito. Análisis gratuito de fraude."
 },
   accessibility: {
     title: "Accesibilidad",
@@ -145,6 +145,39 @@ export const es = {
       title: "La prevención de fraude no debería ser reactiva, fragmentada ni estática.",
       subtitle: "Nuestra misión a largo plazo es convertirnos en la capa de inteligencia de los sistemas transaccionales, donde cada transacción se evalúa, entiende y optimiza en tiempo real.",
       btn: "Cómo funciona"
+    },
+    founders: {
+      title: "Fundada, diseñada y dirigida por expertos en el sector.",
+      marlon: {
+        name: "Marlon Yepes",
+        role: "CEO & Founder",
+        desc: "Ingeniero de software (ex Google, Disney, Globant, Ontap) especializado en sistemas escalables, arquitecturas distribuidas y seguridad global. Impacto en más de 60 países y más de 100M de usuarios - incluso el Super Bowl. Profundamente apasionado por la computación, la enseñanza y la construcción de sistemas que permiten a los equipos crecer y rendir al máximo."
+      },
+      juan: {
+        name: "Juan Franco",
+        role: "COO & Co-Founder",
+        desc: "Texto de ejemplo para Juan. Aquí agregaremos su biografía y su visión dentro de FraudEG."
+      },
+      christian: {
+        name: "Christian Toro",
+        role: "CPO & Co-Founder",
+        desc: "Texto de ejemplo para Christian. Aquí agregaremos su biografía y su visión dentro de FraudEG."
+      }
+    },
+    team: {
+      title: "Nuestro Equipo",
+      members: [
+        { name: "Jhon", role: "Lead" },
+        { name: "Alice", role: "Designer" },
+        { name: "Mark", role: "Developer" },
+        { name: "Sophia", role: "Product Manager" },
+        { name: "David", role: "Marketing Specialist" },
+        { name: "Jhon", role: "Lead" },
+        { name: "Alice", role: "Designer" },
+        { name: "Mark", role: "Developer" },
+        { name: "Sophia", role: "Product Manager" },
+        { name: "David", role: "Marketing Specialist" }
+      ],
     },
   },
   }
