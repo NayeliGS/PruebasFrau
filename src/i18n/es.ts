@@ -156,12 +156,12 @@ export const es = {
       juan: {
         name: "Juan Franco",
         role: "COO & Co-Founder",
-        desc: "Texto de ejemplo para Juan. Aquí agregaremos su biografía y su visión dentro de FraudEG."
+        desc: "Constructor comercial apasionado, con un agudo ojo para la oportunidad y el crecimiento. Con más de 20 años de experiencia en banca y fintech, tiene un historial comprobado de convertir ideas en tracción y escalar ventures en etapas tempranas hasta transformarlas en negocios de alto impacto. Como fundador de SmartCoin, lideró la compañía a más de 700K transacciones y ~COP $100B en volumen, culminando en un exit exitoso a Prosegur."
       },
       christian: {
         name: "Christian Toro",
         role: "CPO & Co-Founder",
-        desc: "Texto de ejemplo para Christian. Aquí agregaremos su biografía y su visión dentro de FraudEG."
+        desc: "Especialista en prevención de ciberfraude con más de 14 años de experiencia en banca, fintech, e-commerce y marketplaces en América Latina. He dedicado mi carrera a entender el fraude como un problema que integra tecnología, datos y comportamiento humano, liderando estrategias e implementando soluciones basadas en IA, machine learning y monitoreo transaccional, además de construir capacidades sólidas de defensa e inteligencia en organizaciones altamente reguladas."
       }
     },
     team: {
@@ -212,5 +212,12 @@ export const es = {
       },
     },
   },
+  home: {
+  hero: {
+    title: "Controlamos el <br /> Intercambio Digital",
+    subtitle: "FraudEG evalúa cada transacción en tiempo real y decide antes del cobro. Sin colas de revisión manual, sin fricción para el cliente legítimo.",
+    cta: "Probar Piloto"
+  },
+},
   }
   
