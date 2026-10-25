@@ -218,6 +218,35 @@ export const es = {
     subtitle: "FraudEG evalúa cada transacción en tiempo real y decide antes del cobro. Sin colas de revisión manual, sin fricción para el cliente legítimo.",
     cta: "Probar Piloto"
   },
+  platform: {
+      trustedBy: "Con la confianza de emprendedores individuales, startups y empresas.",
+      cardDesc: "FraudEG es la plataforma de riesgo para detener el fraude antes de que ocurra, con inteligencia artificial, automatización y monitoreo de transacciones.",
+      cardBtn: "Conoce más",
+      stat1Value: "< 90 ms",
+      stat1Label: "Decisión antes del cobro",
+      stat2Value: "-71%",
+      stat2Label: "Falsos positivos",
+      stat3Value: "5.8x",
+      stat3Label: "Retorno por control",
+      bentoSectionSub: "Nuestras Soluciones",
+      bentoSectionTitle: "Detenemos el fraude\nantes de que ocurra",
+      bentoTag1: "MÓDULO",
+      bentoTitle1: "Prevención de Fraude",
+      bentoDesc1: "Scoring en tiempo real, reglas propias, listas y disputas, sobre cada intento de cobro.",
+      bentoBtn1: "Conocer el módulo",
+      bentoTag2: "PRODUCTO",
+      bentoTitle2: "Monitoreo y cumplimiento",
+      bentoDesc2: "Verificación de comercios, monitoreo continuo, gestión de casos y reportes regulatorios.",
+      bentoBtn2: "Conocer el producto",
+      bentoTag3: "HERRAMIENTA",
+      bentoTitle3: "Cómo se construye un modelo de riesgo para LatAm",
+      bentoDesc3: "Lo que aprendimos entrenando el modelo con tráfico real de la región: datos, sesgos y umbrales.",
+      bentoBtn3: "Descargar herramienta",
+      bentoTag4: "MÓDULO",
+      bentoTitle4: "Prevención de Fraude",
+      bentoDesc4: "Scoring en tiempo real, reglas propias, listas y disputas, sobre cada intento de cobro.",
+      bentoBtn4: "Conocer el módulo"
+    }
 },
-  }
-  
+
+}

@@ -6,6 +6,9 @@ import { AccessibilityMenu } from "../components/Designers-v2/Shared/Accessibili
 import { HeroHomeScan } from '../components/Designers-v2/Home/HeroHomeScan';
 import { HeroHomeRadar } from '../components/Designers-v2/Home/HeroHomeRadar';
 import { HeroHomeAuro } from '../components/Designers-v2/Home/HeroHomeAuro';
+import { HomePlatform } from "../components/Designers-v2/Home/HomePlatform";
+
+
 
 export const HomeV2 = () => {
   return (
@@ -18,6 +21,12 @@ export const HomeV2 = () => {
         <HeroHomeAuro />
         <HeroHomeRadar />
         <HeroHomeScan />
+        <HomePlatform />
+      
+        
+      
+
+        
         
       </main>
 

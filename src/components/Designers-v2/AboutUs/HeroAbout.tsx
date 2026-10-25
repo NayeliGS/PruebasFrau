@@ -4,7 +4,7 @@ export const HeroAbout = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative w-full flex flex-col gap-32 py-10 z-10">
+    <div className="relative w-full flex flex-col gap-32 py-29 z-10">
       
       {/* CAPA DE LUZ COMPARTIDA */}
       <div className="absolute top-[5%] right-[-10%] w-[800px] lg:w-[1000px] h-[1200px] bg-[#10F5C4]/15 blur-[150px] rounded-[100%] pointer-events-none z-0"></div>
