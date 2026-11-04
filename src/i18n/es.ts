@@ -41,15 +41,15 @@ export const es = {
   solutionsCatalog: {
     batch: {
       title: "HISTORICAL TRACKER",
-      subtitle: "Aprende del pasado antes de arriesgar tu futuro",
-      description: "Prueba cualquier cambio de reglas o límites sobre tus transacciones reales antes de publicarlo. Historical Tracker repite tu historial con la misma lógica de Exchange Guard que opera en producción. Sabrás de antemano cuánto fraude habrías detenido y cuántos clientes buenos habrías aprobado.",
+      subtitle: "Retrospectiva y por lotes",
+      description: "Cuando necesitas pruebas, calibración o revisar el pasado, Historical Tracker reproduce transacciones con la misma lógica que usas en producción.",
       subtitleAccion: "Descubre cuánto fraude se le escapó a tu operación el último mes →",
       subtitleAccion2: "Lo medimos en tu piloto SIN COSTO, con tus propios datos.",
       bullets: [
-        "Cambia reglas sin miedo: mide el impacto de cada ajuste antes de llevarlo a producción.",
-        "Auditorías resueltas en horas, no en semanas: exporta evidencia lista con puntajes, límites y motivos de cada decisión.",
-        "Encuentra dónde se te escapa el fraude: analiza grupos por velocidad, geografía y canal para ver patrones que el día a día no muestra.",
-        "Lo que pruebas es lo que obtienes: los análisis por lotes usan tus mismas reglas de seguridad, así que los resultados coinciden con lo que vivirás en vivo."
+        "Pruebas y calibración histórica antes de aplicar cambios en los límites.",
+        "Exportaciones de datos para investigación que incluyen calificaciones, límites y motivos.",
+        "Vistas de grupos (cohortes) organizadas por velocidad, geografía y herramientas.",
+        "Lotes fuera de línea (offline) que heredan tus reglas de seguridad para mantener la coherencia con las decisiones en vivo."
       ],
       mockup: {
         title: "Cobertura de alertamiento",
@@ -59,8 +59,13 @@ export const es = {
       }
     },
     live: {
-      title: "Tráfico en vivo",
+      
+      title: "REAL TIME INSPECTOR",
+      subtitle: "Tráfico en vivo",
       description: "Evalúa y decide sobre cada transacción en tiempo real apenas llega a tu sistema, antes de autorizar el movimiento de dinero o inventario.",
+      subtitleAccion: "Mira qué decisiones habría tomado Exchange Guard sobre tu tráfico hoy →",
+      subtitleAccion2: "Modo observador: lo conectamos sin bloquear nada ni tocar tu operación.",
+
       bullets: [
         "Evaluación instantánea con escalas de riesgo de 0 a 100 en todos los canales.",
         "Reglas y políticas personalizables para el proceso de pago.",
@@ -74,8 +79,12 @@ export const es = {
       }
     },
     monitor: {
-      title: "Vigilancia continua",
+      title: "Smart Monitor",
+      subtitle: "Evaluación en tiempo real",
       description: "Monitorea el estado de funciones, reportes en listas y picos de anomalías. Los equipos reciben alertas priorizadas en lugar de saturarse con tableros complejos, permitiendo que las reglas se adapten en tiempo real.",
+      subtitleAccion: "Descubre qué señales está ignorando tu sistema actual →",
+      subtitleAccion2: "Te lo mostramos durante tu piloto, sin costo y sobre tu propia operación.",
+
       bullets: [
         "Alertas de desvíos y rendimiento cuando cambian los modelos o segmentos.",
         "Listas de vigilancia para dispositivos, correos, BINs y entidades propias.",
@@ -90,8 +99,12 @@ export const es = {
       }
     },
     patterns: {
-      title: "Patrones y redes",
+      title: "Fraud Intelligence",
+      subtitle: "Patrones y redes",
       description: "Fraud Intelligence conecta puntos: encuentra redes de fraude complejas y patrones que una sola transacción podría pasar por alto. Enriquece decisiones con contexto centrado en entidades.",
+      subtitleAccion: "Descubre qué redes de fraude se están moviendo en tu operación →",
+      subtitleAccion2: "Lo analizamos en tu piloto gratuito, con tus propios datos.",
+
       bullets: [
         "Contexto detallado de conexiones (grafo) para reforzar bloqueos y revisiones.",
         "Líneas de tiempo para analistas con exportación directa para investigaciones.",

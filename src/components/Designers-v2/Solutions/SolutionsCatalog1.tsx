@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 export const SolutionsCatalog1 = () => {
   return (
     // Se elimina px-6 para permitir que el fondo de las cards toque los bordes de la pantalla
-    <section className="w-full flex flex-col items-center gap-3 py-16 font-sans overflow-hidden">
+    <section className="w-full flex flex-col items-center gap-3  font-sans overflow-hidden">
       <BatchCard />
       <LiveCard />
       <MonitorCard />
@@ -36,10 +36,10 @@ const BatchCard = () => {
       {/* Contenedor interno: max-w-6xl mx-auto para centrar el contenido */}
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] mb-4">
+          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] ">
             {t('solutionsCatalog.batch.title')}
           </h2>
-          <h3 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] mb-4">
+          <h3 className="text-[18px] font-bold leading-[46px] tracking-[-0.01em] text-[#10F5C4] mb-4">
             {t('solutionsCatalog.batch.subtitle')}
           </h3>
           <p className={`mb-8 text-lg font-medium leading-7 transition-colors duration-[5000ms] ${isVisible ? 'text-gray-300' : 'text-gray-800'}`}>
@@ -93,9 +93,12 @@ const LiveCard = () => {
     >
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-10">
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] mb-4">
+          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] ">
             {t('solutionsCatalog.live.title')}
           </h2>
+          <h3 className="text-[18px] font-bold leading-[46px] tracking-[-0.01em] text-[#065F4C] mb-4">
+            {t('solutionsCatalog.live.subtitle')}
+          </h3>
           <p className={`mb-8 text-lg font-medium leading-7 transition-colors duration-[5000ms] ${isVisible ? 'text-gray-800' : 'text-gray-300'}`}>
             {t('solutionsCatalog.live.description')}
           </p>
@@ -111,6 +114,12 @@ const LiveCard = () => {
               </li>
             ))}
           </ul>
+          <h3 className="text-[15px] font-bold leading-[46px] text-[#065F4C] tracking-[-0.01em] mt-4 ">
+            {t('solutionsCatalog.live.subtitleAccion')}
+          </h3>
+          <h4 className="text-[14px] font-normal  text-gray-700 tracking-[-0.01em]  mb-4">
+            {t('solutionsCatalog.live.subtitleAccion2')}
+          </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
           <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-cyan-300 to-blue-500 shadow-inner"></div>
@@ -141,9 +150,12 @@ const MonitorCard = () => {
     >
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] mb-4">
+          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] ">
             {t('solutionsCatalog.monitor.title')}
           </h2>
+          <h3 className="text-[18px] font-bold leading-[46px] tracking-[-0.01em] text-[#10F5C4] mb-4">
+            {t('solutionsCatalog.monitor.subtitle')}
+          </h3>
           <p className={`mb-8 text-lg font-medium leading-7 transition-colors duration-[5000ms] ${isVisible ? 'text-gray-300' : 'text-gray-800'}`}>
             {t('solutionsCatalog.monitor.description')}
           </p>
@@ -159,6 +171,12 @@ const MonitorCard = () => {
               </li>
             ))}
           </ul>
+          <h3 className="text-[17px] font-bold leading-[46px] text-[#10F5C4] tracking-[-0.01em] mt-4 ">
+            {t('solutionsCatalog.monitor.subtitleAccion')}
+          </h3>
+          <h4 className="text-[14px] font-normal  text-gray-300 tracking-[-0.01em]  mb-4">
+            {t('solutionsCatalog.monitor.subtitleAccion2')}
+          </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
           <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-500 shadow-inner"></div>
@@ -189,9 +207,12 @@ const PatternsCard = () => {
     >
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-10">
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] mb-4">
+          <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] ">
             {t('solutionsCatalog.patterns.title')}
           </h2>
+          <h3 className="text-[18px] font-bold leading-[46px] tracking-[-0.01em] text-[#065F4C] mb-4">
+            {t('solutionsCatalog.patterns.subtitle')}
+          </h3>
           <p className={`mb-8 text-lg font-medium leading-7 transition-colors duration-[5000ms] ${isVisible ? 'text-gray-800' : 'text-gray-300'}`}>
             {t('solutionsCatalog.patterns.description')}
           </p>
@@ -207,6 +228,12 @@ const PatternsCard = () => {
               </li>
             ))}
           </ul>
+          <h3 className="text-[15px] font-bold leading-[46px] text-[#065F4C] tracking-[-0.01em] mt-4 ">
+            {t('solutionsCatalog.live.subtitleAccion')}
+          </h3>
+          <h4 className="text-[14px] font-normal  text-gray-700 tracking-[-0.01em]  mb-4">
+            {t('solutionsCatalog.live.subtitleAccion2')}
+          </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
           <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-orange-300 to-amber-500 shadow-inner"></div>

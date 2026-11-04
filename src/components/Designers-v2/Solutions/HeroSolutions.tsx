@@ -14,8 +14,7 @@ export const HeroSolutions = () => {
   const subtitleText = t("hero.subtitle").trim();
 
   return (
-    
-    <section className="relative w-full flex flex-col items-center font-sans bg-[#0B0E12] pb-16 px-6 overflow-hidden">
+    <section className="relative w-full flex flex-col items-center font-sans bg-[#0B0E12] pb-1 px-6 overflow-visible">
       
       {/* ========================================================= */}
       {/* CAPA DE LUCES LATERALES (Emanan desde los costados) */}
@@ -25,11 +24,6 @@ export const HeroSolutions = () => {
       
       {/* Luz Derecha */}
       <div className="absolute top-[20%] -right-[20%] w-[100px] lg:w-[400px] h-[400px] bg-[#10F5C4]/15 blur-[150px] rounded-[100%] pointer-events-none z-0"></div>
-
-      {/* ========================================================= */}
-      {/* CAPA DE LA IMAGEN DE FONDO (Colocada detrás del texto) */}
-      {/* ========================================================= */}
-      
 
       {/* ========================================================= */}
       {/* CONTENIDO PRINCIPAL (Texto y Animación en la capa superior) */}
@@ -58,8 +52,12 @@ export const HeroSolutions = () => {
             </p>
         </div>
 
-        {/* Pestañas de navegación */}
-        <div className="sticky top-4 z-50 w-full max-w-5xl mx-auto flex flex-col md:flex-row justify-center gap-2 md:gap-4 items-center rounded-2xl shadow-2xl px-4 py-3 border-none bg-[#050709]/80 backdrop-blur-md">
+        {/* 
+          Pestañas de navegación modificadas para Stacking Sticky:
+          - sticky top-16 (ancla justo debajo de la barra de navegación original, ajusta el valor en rem si la navbar tiene otra altura)
+          - z-40 o z-50 para priorizar
+        */}
+        <div className="sticky top-20 z-[60] w-full max-w-5xl mx-auto flex flex-col md:flex-row justify-center gap-2 md:gap-4 items-center rounded-2xl shadow-2xl px-4 py-3 border-none bg-[#050709]/80 backdrop-blur-md">
           {modules.map((mod) => (
             <a
               href={`#${mod.id}`}
