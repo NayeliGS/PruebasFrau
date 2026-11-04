@@ -31,8 +31,7 @@ export const es = {
   },
   hero: {
   animationText: "El motor detrás de Fraudeg",
-  topText1: "Cuatro soluciones. Un mismo motor.",
-  topText2: "Revisa el pasado, decide en el presente, anticipa lo que viene y descubre lo que está conectado:",
+  topText1: "Cuatro soluciones. Un mismo motor:",
   subtitle: "Exchange Guard es la inteligencia artificial propia de FraudEG, creada solo para un objetivo: proteger tu intercambio de valor digital.  Entiende el origen de cada transacción, decide en tiempo real y aprende de cada interacción para que pierdas menos y apruebes más",
   tab1: "Historical Tracker",
   tab2: "Real Time Inspector",
