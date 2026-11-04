@@ -18,6 +18,8 @@ export const es = {
     product: "Producto",
     solutions: "Soluciones",
     integrations: "Integraciones",
+    plans: "Planes",
+    pilot: "Piloto",
     company: "Compañía",
     aboutUs: "Nosotros",
     investors: "Inversionistas",

@@ -3,6 +3,8 @@ import { Footer } from "../components/Designers-v2/Shared/Footer";
 import { AccessibilityMenu } from "../components/Designers-v2/Shared/AccessibilityMenu";
 import { HeroHomeAuro } from '../components/Designers-v2/Home/HeroHomeAuro';
 import { HomePlatform } from "../components/Designers-v2/Home/HomePlatform";
+import { HeroHomeAurocopy } from "../components/Designers-v2/Home/HeroHomeAurocopy";
+import { HeroHomeAurocopycopy } from "../components/Designers-v2/Home/HeroHomeAurocopycopy";
 
 
 
@@ -15,6 +17,8 @@ export const HomeV2 = () => {
       <main className="flex-grow flex flex-col w-full">
         <AccessibilityMenu />
         <HeroHomeAuro />
+        <HeroHomeAurocopy />
+        <HeroHomeAurocopycopy />
 
         <HomePlatform />
       

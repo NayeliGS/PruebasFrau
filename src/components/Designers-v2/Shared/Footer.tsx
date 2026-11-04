@@ -67,6 +67,9 @@ export const Footer = () => {
               <h4 className="text-lg font-bold leading-7 text-[#A1A8B0] tracking-wider">{t('footer.product')}</h4>
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.solutions')}</a>
               <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.integrations')}</a>
+              <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.plans')}</a>
+              <a href="#" className="text-base font-normal leading-6 text-[#9CA3AF] hover:text-[#10F5C4] transition-colors">{t('footer.pilot')}</a>
+
             </div>
 
             <div className="flex flex-col gap-5">

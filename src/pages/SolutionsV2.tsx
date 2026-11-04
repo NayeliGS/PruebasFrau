@@ -7,7 +7,7 @@ import { SolutionsCatalog1 } from "../components/Designers-v2/Solutions/Solution
 
 export const SolutionsV2 = () => {
   return (
-    <div className=" bg-[#050709] text-[#F9F9F9] flex flex-col font-sans">
+    <div className=" bg-[#0B0E12] text-[#F9F9F9] flex flex-col font-sans">
       <Navbar />
       <main className="flex-grow flex flex-col items-center w-full gap-20">
         <HeroSolutions />
