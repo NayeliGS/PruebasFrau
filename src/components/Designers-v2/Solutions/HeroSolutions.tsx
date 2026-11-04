@@ -14,34 +14,18 @@ export const HeroSolutions = () => {
   const subtitleText = t("hero.subtitle").trim();
 
   return (
-    <section className="w-full flex flex-col items-center font-sans bg-[#0B0E12] relative pb-16 px-6">
-      <p className="w-full max-w-3xl text-[#10F5C4] text-center text-[18px] font-medium leading-[28px] tracking-[0%] mb-12">
+    <section className="w-full flex flex-col items-center font-sans bg-[#0B0E12] relative ">
+      <p className="w-full max-w-2xl text-[#10F5C4] text-center text-[18px] font-medium leading-[28px] tracking-[0%]  mt-37">
         {t("hero.animationText")}
       </p>
 
-      <div className="w-full max-w-[600px] h-[360px] flex items-center justify-center mb-10 overflow-hidden relative rounded-2xl">
+      {/* 👇 CONTENEDOR RESTAURADO A max-w-4xl (MÁS ANCHO) */}
+      <div className="w-full max-w-4xl h-[200px] flex items-center justify-center  overflow-hidden relative rounded-2xl">
         <FraudEGBackground />
       </div>
 
-      <p className="w-full max-w-3xl text-[#A1A8B0] text-center text-[32px] font-medium leading-[28px] tracking-[0%] mb-8">
-        {t("hero.controlText")}
-      </p>
-
       <p className="w-full max-w-3xl text-[#A1A8B0] text-center text-[18px] font-medium leading-[28px] tracking-[0%] mb-12">
         {subtitleText}
-      </p>
-
-      <div className="flex flex-col sm:flex-row gap-4 mb-8">
-        <button className="w-[274px] h-[48px] bg-[#10F5C4] rounded-lg text-[#10151B] text-[18px] font-semibold leading-[24px] tracking-[0%] flex items-center justify-center transition-colors hover:bg-[#10F5C4]/90">
-          {t("hero.btnPrimary")}
-        </button>
-        <button className="w-[230px] h-[48px] border border-[#F9F9F9] rounded-lg text-[#F9F9F9] text-[18px] font-semibold leading-[24px] tracking-[0%] flex items-center justify-center transition-colors hover:bg-white/10">
-          {t("hero.btnSecondary")}
-        </button>
-      </div>
-
-      <p className="w-full max-w-3xl text-[#A1A8B0] text-center text-[18px] font-medium leading-[28px] tracking-[0%] mb-12">
-        {t("hero.pilotDisclaimer")}
       </p>
 
       <div className="w-full max-w-4xl h-[4px] bg-gradient-to-r from-transparent via-white/15 to-transparent mb-16"></div>

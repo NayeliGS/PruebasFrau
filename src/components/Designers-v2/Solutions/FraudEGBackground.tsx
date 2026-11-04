@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
 
-import fraudegLogo from "/designersV2/Fraudeg.svg";
-
 const COLORS = {
   background: "#0B0E12",
   green: "#10F5C4",
@@ -47,10 +45,11 @@ const E_INDEX = 0;
 const G_INDEX = FINAL_TEXT.indexOf(" ") + 1;
 
 // 👇 PARÁMETROS DE POSICIÓN Y TAMAÑO DE LA ANIMACIÓN
-const ANIMATION_Y_POSITION = 0.72; // 0.5 es el centro; 0.72 la ubica más abajo
-const ANIMATION_SCALE = 0.62; // Escala general de la animación (0.62 = 62% del tamaño anterior)
+const ANIMATION_Y_POSITION = 0.5;
+// AUMENTADO DE 0.62 a 1.2 para que se vea sustancialmente más grande
+const ANIMATION_SCALE = 1.2;
 
-// Configuración de la grilla de píxeles ajustada al nuevo tamaño más chico:
+// Configuración de la grilla de píxeles
 const PARTICLE_STEP = 2.8;
 const MIN_PARTICLE_STEP = 1.8;
 const REFERENCE_TITLE_SIZE = 110;
@@ -174,9 +173,15 @@ function sampleText(width: number, height: number): TextLayout {
       offCtx.measureText(NAME_FRAUD + NAME_EG_UPPER).width,
     ) / 100 || 4.2;
 
-  const baseTitleSize = isMobile
-    ? Math.min((width * 0.78) / widthRatio, height * 0.19, REFERENCE_TITLE_SIZE)
-    : Math.min(width * 0.115, height * 0.19, REFERENCE_TITLE_SIZE);
+  // 👇 AJUSTE CLAVE: Se reintroduce el clamp de tamaño y se separan las lógicas para asegurar un buen tamaño en móvil y uno grande en compu
+  let baseTitleSize;
+  if (isMobile) {
+    // Lógica para móvil: se mantiene pequeña y acotada al contenedor (similar a como funcionaba bien antes)
+    baseTitleSize = Math.min((width * 0.78) / widthRatio, height * 0.19, REFERENCE_TITLE_SIZE * 0.8);
+  } else {
+    // Lógica para escritorio: permite que la letra crezca en proporción a la pantalla grande (un multiplicador de base mayor)
+    baseTitleSize = Math.min((width * 0.22) / (widthRatio * 0.6), height * 0.28, REFERENCE_TITLE_SIZE * 1.5);
+  }
 
   const titleSize = baseTitleSize * ANIMATION_SCALE;
 
@@ -242,7 +247,6 @@ function sampleText(width: number, height: number): TextLayout {
     return points;
   };
 
-  // 1. Título: "Fraud", "e"/"g" (minúsculas) y "E"/"G" (mayúsculas).
   offCtx.font = `${TITLE_WEIGHT} ${titleSize}px ${FONT_FAMILY}`;
   const startX = centerX - offCtx.measureText(NAME).width / 2;
   const fraudWidth = offCtx.measureText(NAME_FRAUD).width;
@@ -273,7 +277,6 @@ function sampleText(width: number, height: number): TextLayout {
   const titleEUpper = captureTitlePart(NAME_EG_UPPER[0], eUpperX);
   const titleGUpper = captureTitlePart(NAME_EG_UPPER[1], gUpperX);
 
-  // 2. Texto final: "Exchange Guard" centrado en la nueva posición Y.
   offCtx.font = `${SUBTITLE_WEIGHT} ${subtitleSize}px ${FONT_FAMILY}`;
 
   const lineStart = centerX - offCtx.measureText(FINAL_TEXT).width / 2;
@@ -921,12 +924,6 @@ export default function FraudEGBackground() {
       role="img"
       aria-label="FraudEG. Exchange Guard."
     >
-      <img
-        src={fraudegLogo}
-        alt=""
-        className="absolute top-[28%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[clamp(280px,32vw,460px)] h-auto z-[2] pointer-events-none select-none"
-        aria-hidden="true"
-      />
       <canvas
         ref={canvasRef}
         className="block w-full h-full pointer-events-none select-none z-[1]"

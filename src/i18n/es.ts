@@ -30,14 +30,10 @@ export const es = {
     copyright: "© 2026 FraudEG. Todos los derechos reservados"
   },
   hero: {
-  animationText: "El motor detrás de fraudeg",
+  animationText: "El motor detrás de Fraudeg",
   topText1: "Cuatro soluciones. Un mismo motor.",
   topText2: "Revisa el pasado, decide en el presente, anticipa lo que viene y descubre lo que está conectado:",
-  subtitle: "Exchange Guard es la inteligencia artificial propia de FraudEG, creada solo para un objetivo: proteger tu intercambio de valor digital. Funciona como un solo motor, con una sola integración. Entiende el origen de cada transacción, decide en tiempo real y aprende de cada interacción para que pierdas menos y apruebes más",
-  controlText: "Deja de detectar el fraude. Empieza a controlarlo.",
-  btnSecondary: "Ver como funciona",
-  btnPrimary: "Solicitar piloto SIN COSTO",
-  pilotDisclaimer: "Piloto en modo observador sobre tu tráfico real · Sin tarjeta · Sin compromiso",
+  subtitle: "Exchange Guard es la inteligencia artificial propia de FraudEG, creada solo para un objetivo: proteger tu intercambio de valor digital.  Entiende el origen de cada transacción, decide en tiempo real y aprende de cada interacción para que pierdas menos y apruebes más",
   tab1: "Historical Tracker",
   tab2: "Real Time Inspector",
   tab3: "Smart Monitor",
