@@ -8,7 +8,7 @@ import { PartnersAbout } from "../components/Designers-v2/AboutUs/PartnersAbout"
 
 export const AboutUsV2 = () => {
   return (
-    <div className="min-h-screen bg-[#0B0E12] text-[#F9F9F9] flex flex-col font-sans relative overflow-hidden">
+    <div className="min-h-screen bg-[#0B0E12] text-[#F9F9F9] flex flex-col font-sans relative overflow-hidden transform-gpu">
       
       <Navbar />
       

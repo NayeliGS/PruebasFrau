@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 export const SolutionsCatalog1 = () => {
   return (
     // Se elimina px-6 para permitir que el fondo de las cards toque los bordes de la pantalla
-    <section className="w-full flex flex-col items-center gap-3  font-sans overflow-hidden">
+    <section className="w-full flex flex-col items-center gap-3  font-sans overflow-hidden transform-gpu">
       <BatchCard />
       <LiveCard />
       <MonitorCard />

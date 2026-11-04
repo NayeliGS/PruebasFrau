@@ -14,7 +14,7 @@ export const HeroSolutions = () => {
   const subtitleText = t("hero.subtitle").trim();
 
   return (
-    <section className="relative w-full flex flex-col items-center font-sans bg-[#0B0E12] pb-1 px-6 overflow-visible">
+    <section className="relative w-full flex flex-col items-center font-sans bg-[#0B0E12] pb-1 px-6 overflow-visible transform-gpu">
       
       {/* ========================================================= */}
       {/* CAPA DE LUCES LATERALES (Emanan desde los costados) */}
