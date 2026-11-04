@@ -63,10 +63,10 @@ export const HeroHomeAuro = () => {
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 pointer-events-none">
         <div className="w-full max-w-4xl mx-auto text-center mt-32 pointer-events-auto flex flex-col items-center">
           <h1
-            className="font-bold text-[48px] md:text-[72px] leading-[1.1] tracking-[-0.02em] mb-6 text-[#F9F9F9]/30"
+            className="font-bold text-[48px] md:text-[72px] leading-[1.1] tracking-[-0.02em] mb-6 text-[#F9F9F9]/85"
             dangerouslySetInnerHTML={{ __html: t('home.hero.title') }}
           ></h1>
-          <p className="text-[18px] md:text-[20px] font-medium max-w-3xl mx-auto leading-[1.6] mb-12 text-gray-500">
+          <p className="text-[18px] md:text-[20px] font-medium max-w-3xl mx-auto leading-[1.6] mb-12 text-[#F9F9F9]/80">
             {t('home.hero.subtitle')}
           </p>
           <div className="w-[200px] h-[48px] opacity-0"></div>

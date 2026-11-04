@@ -40,10 +40,12 @@ export const PartnersAbout = () => {
         
         {/* COLUMNA IZQUIERDA: Textos */}
         <div className="w-full lg:w-1/3 flex flex-col items-start text-left mt-0 lg:mt-10">
-          <h2 className="font-semibold text-[40px] md:text-[48px] leading-[48px] md:leading-[56px] tracking-[-0.015em] text-[#FFFFFF] mb-6 whitespace-pre-line">
+          {/* 👇 TÍTULO: text-[clamp(40px,5vw,48px)] y leading-[1.2] */}
+          <h2 className="font-semibold  text-[clamp(32px,4vw,40px)] leading-[1.2] tracking-[-0.015em] text-[#FFFFFF] mb-6 whitespace-pre-line">
             {t('about.partners.title')}
           </h2>
-          <p className="font-medium text-[20px] md:text-[24px] leading-[32px] md:leading-[34px] tracking-[-0.01em] text-[#F9F9F9] whitespace-pre-line">
+          {/* 👇 SUBTÍTULO: text-[clamp(20px,2.5vw,24px)] y leading-[1.5] */}
+          <p className="font-medium text-[clamp(20px,2.5vw,28px)] leading-[1.2] tracking-[-0.02em] text-[#F9F9F9] whitespace-pre-line">
             {t('about.partners.subtitle')}
           </p>
         </div>
@@ -63,10 +65,12 @@ export const PartnersAbout = () => {
               </div>
               
               {/* Textos descriptivos */}
-              <h3 className="text-[#F9F9F9] font-bold text-[18px] leading-[28px] mb-2">
+              {/* 👇 NOMBRE DEL ALIADO: text-[clamp(16px,2vw,18px)] */}
+              <h3 className="text-[#F9F9F9] font-bold text-[clamp(16px,2vw,18px)] leading-[1.4] mb-2">
                 {t(partner.nameKey)}
               </h3>
-              <p className="text-[#A1A8B0] font-normal text-[14px] leading-[22px]">
+              {/* 👇 DESCRIPCIÓN: text-[clamp(14px,1.5vw,15px)] */}
+              <p className="text-[#A1A8B0] font-normal text-[clamp(16px,1.5vw,16px)] leading-[1.6]">
                 {t(partner.descKey)}
               </p>
               

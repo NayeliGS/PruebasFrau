@@ -33,21 +33,21 @@ export const FoundersAbout = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#0B0E12] font-sans  pb-4 px-6 overflow-hidden">
+    <section className="relative w-full bg-[#0B0E12] font-sans pb-48 px-6 overflow-hidden">
       
       {/* Fondo con la imagen de puntos */}
       <div 
         className="absolute inset-0 z-0 opacity-40 bg-cover bg-no-repeat"
         style={{ 
           backgroundImage: "url('/designersV2/FondoWe.png')",
-          backgroundPosition: "center -1000px" 
+          backgroundPosition: "center -200px" 
         }}
       ></div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center">
         
         {/* --- SECCIÓN 1: FUNDADORES --- */}
-        <h2 className="text-[#F9F9F9] text-center font-semibold text-[32px] md:text-[40px] leading-[48px] tracking-[-0.01em] mb-28 max-w-2xl">
+        <h2 className="text-[#F9F9F9] text-center font-semibold text-[clamp(32px,4vw,40px)] leading-[1.2] tracking-[-0.01em] mb-28 max-w-2xl">
           {t('about.founders.title')}
         </h2>
 
@@ -83,7 +83,7 @@ export const FoundersAbout = () => {
                     {t(founder.roleKey)}
                   </span>
                   
-                  <span className="text-[#FFFFFF] font-bold text-[28px] md:text-[32px] leading-tight">
+                  <span className="text-[#FFFFFF] font-bold text-[clamp(28px,3vw,32px)] leading-tight">
                     {t(founder.nameKey)}
                   </span>
 
@@ -93,7 +93,7 @@ export const FoundersAbout = () => {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="text-[#F9F9F9] font-medium text-[14px] md:text-[15px] leading-relaxed mb-6">
+                      <p className="text-[#F9F9F9] font-medium text-[clamp(14px,1.5vw,15px)] leading-relaxed mb-6">
                         {t(founder.descKey)}
                       </p>
                       
@@ -117,7 +117,7 @@ export const FoundersAbout = () => {
         </div>
 
         {/* --- SECCIÓN 2: NUESTRO EQUIPO --- */}
-        <h3 className="text-[#F9F9F9] text-center font-semibold text-[32px] md:text-[40px] leading-[48px] tracking-[-0.01em] mb-6">
+        <h3 className="text-[#F9F9F9] text-center font-semibold text-[clamp(32px,4vw,40px)] leading-[1.2] tracking-[-0.01em] mb-6">
           {t('about.team.title')}
         </h3>
 
@@ -144,10 +144,10 @@ export const FoundersAbout = () => {
         {/* --- SECCIÓN 3: BOARD OF ADVISORS --- */}
         <div className="w-full bg-[#EAF2ED] rounded-[3rem] mt-37 p-10 md:p-30 flex flex-col items-center">
           
-          <h3 className="text-[#10151B] text-center font-bold text-[36px] md:text-[44px] leading-tight tracking-[-0.01em] mb-2">
+          <h3 className="text-[#10151B] text-center font-bold  text-[clamp(32px,4vw,40px)] leading-tight tracking-[-0.01em] mb-2">
             {t('about.advisors.title')}
           </h3>
-          <p className="text-[#475467] text-center font-medium text-[16px] md:text-[18px] max-w-2xl leading-relaxed mb-14">
+          <p className="text-[#475467] text-center p-2 font-medium text-[clamp(16px,2vw,24px)] leading-tight tracking-[-0.01em] max-w-2xl leading-relaxed mb-14">
             {t('about.advisors.subtitle')}
           </p>
 
@@ -162,10 +162,10 @@ export const FoundersAbout = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h4 className="text-[#10151B] font-bold text-[24px] mb-3">
+              <h4 className="text-[#10151B] font-bold text-[clamp(24px,2vw,24px)] mb-3">
                 {t('about.advisors.carlos.name')}
               </h4>
-              <p className="text-[#475467] font-medium text-[14px] leading-[22px]">
+              <p className="text-[#475467] font-medium text-[clamp(16px,2vw,16px)] leading-[22px]">
                 {t('about.advisors.carlos.desc')}
               </p>
             </div>
@@ -179,10 +179,10 @@ export const FoundersAbout = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h4 className="text-[#10151B] font-bold text-[24px] mb-3">
+              <h4 className="text-[#10151B] font-bold text-[clamp(24px,2vw,24px)] mb-3">
                 {t('about.advisors.emily.name')}
               </h4>
-              <p className="text-[#475467] font-medium text-[14px] leading-[22px]">
+              <p className="text-[#475467] font-medium text-[clamp(16px,2vw,16px)] leading-[22px]">
                 {t('about.advisors.emily.desc')}
               </p>
             </div>

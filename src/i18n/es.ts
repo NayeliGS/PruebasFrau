@@ -14,7 +14,7 @@ export const es = {
   },
 
   footer: {
-    description: "La plataforma de detección de fraude más avanzada para empresas modernas. Proteja sus ingresos con la protección que ofrece la inteligencia artificial.",
+    description: "La capa de confianza para la economía digital. No solo detecta el fraude: controla tu intercambio de valor digital. Con Exchange Guard, nuestra inteligencia artificial propia, protegemos tus ingresos en cada transacción, desde una sola plataforma.",
     product: "Producto",
     solutions: "Soluciones",
     integrations: "Integraciones",
@@ -171,12 +171,12 @@ export const es = {
         { name: "Alice", role: "Designer" },
         { name: "Mark", role: "Developer" },
         { name: "Sophia", role: "Product Manager" },
-        { name: "David", role: "Marketing Specialist" },
+        { name: "David", role: "Marketing " },
         { name: "Jhon", role: "Lead" },
         { name: "Alice", role: "Designer" },
         { name: "Mark", role: "Developer" },
         { name: "Sophia", role: "Product Manager" },
-        { name: "David", role: "Marketing Specialist" }
+        { name: "David", role: "Marketing " }
       ],
     },
     advisors: {

@@ -15,7 +15,8 @@ export const HeroAbout = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 px-6">
         
         <div className="w-full lg:w-5/12 flex flex-col items-center text-center lg:items-start lg:text-left">
-          <h1 className="font-medium text-[32px] leading-[46px] tracking-[-0.01em] text-[#F9F9F9] mb-10 max-w-lg">
+          {/* 👇 TÍTULO PRINCIPAL: Tipografía fluida con clamp */}
+          <h1 className="font-medium text-[clamp(12px,5vw,30px)] leading-[1.2] tracking-[-0.01em] text-[#F9F9F9] mb-10 max-w-lg">
             {t('about.heroTitle')}
           </h1>
           
@@ -65,8 +66,7 @@ export const HeroAbout = () => {
 
             {/* Tarjeta 2: Texto Inferior (Corta) */}
             <div className="relative w-full h-[240px] bg-gradient-to-br from-white to-gray-200 rounded-3xl p-8 flex items-center shadow-lg">
-              {/* 👇 Redujimos text-[32px] a [24px] y leading-[46px] a [34px] */}
-              <p className="font-semibold text-[24px] leading-[34px] tracking-[-0.01em] text-[#10151B]">
+              <p className="font-semibold text-[clamp(16px,5vw,20px)] leading-[30px] tracking-[-0.01em] text-[#10151B]">
                 {t('about.mission.card2')}
               </p>
             </div>
@@ -75,10 +75,8 @@ export const HeroAbout = () => {
           {/* Sub-columna Derecha */}
           <div className="flex-1 flex flex-col gap-6 z-10">
             {/* Tarjeta 3: Texto Superior (Corta) */}
-            {/* Tarjeta 3: Texto Superior (Corta) */}
             <div className="relative w-full h-[240px] bg-gradient-to-br from-white to-gray-200 rounded-3xl p-8 flex items-center shadow-lg">
-              {/* 👇 Misma reducción para mantener simetría */}
-              <p className="font-semibold text-[24px] leading-[34px] tracking-[-0.01em] text-[#10151B]">
+              <p className="font-semibold text-[clamp(16px,5vw,20px)] leading-[30px] tracking-[-0.01em] text-[#10151B]">
                 {t('about.mission.card1')}
               </p>
             </div>
@@ -93,11 +91,12 @@ export const HeroAbout = () => {
 
         {/* COLUMNA DERECHA: Textos Descriptivos */}
         <div className="w-full lg:w-1/2 flex flex-col items-start text-left">
-          <h2 className="font-semibold text-[38px] leading-[56px] tracking-[-0.015em] text-[#FFFFFF] mb-6">
+          {/* 👇 TÍTULO SECUNDARIO: Tipografía fluida con clamp */}
+          <h2 className="font-semibold text-[clamp(12px,5vw,30px)] leading-[1.1] tracking-[-0.015em] text-[#FFFFFF] mb-6">
             {t('about.mission.title')}
           </h2>
           
-          <p className="font-normal text-[24px] leading-[34px] tracking-[-0.01em] text-[#A1A8B0] mb-10">
+          <p className="font-normal text-[clamp(12px,5vw,24px)] leading-[28px] tracking-[-0.01em] text-[#A1A8B0] mb-10">
             {t('about.mission.subtitle')}
           </p>
           
