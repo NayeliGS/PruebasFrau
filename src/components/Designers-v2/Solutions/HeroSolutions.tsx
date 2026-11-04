@@ -35,7 +35,7 @@ export const HeroSolutions = () => {
         </p>
 
         {/* Contenedor de la animación (restaurado) */}
-        <div className="w-full max-w-4xl h-[200px] flex items-center justify-center overflow-hidden relative rounded-2xl mb-14">
+        <div className="w-full max-w-4xl h-[200px] flex items-center justify-center overflow-hidden transform-gpu relative rounded-2xl mb-14">
           <FraudEGBackground />
         </div>
 

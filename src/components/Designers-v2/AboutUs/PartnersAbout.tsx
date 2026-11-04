@@ -31,7 +31,7 @@ export const PartnersAbout = () => {
   ];
 
   return (
-    <section className="relative w-full py-24 px-6 overflow-hidden z-10">
+    <section className="relative w-full py-24 px-6 overflow-hidden transform-gpu z-10">
       
       {/* CAPA DE LUZ: Degradado verde intenso alineado a la izquierda */}
       <div className="absolute top-1/2 left-[-15%] -translate-y-1/2 w-[500px] md:w-[700px] h-[800px] bg-[#10F5C4]/25 blur-[160px] rounded-full pointer-events-none z-0"></div>

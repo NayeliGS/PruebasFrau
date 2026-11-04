@@ -33,7 +33,7 @@ export const FoundersAbout = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#0B0E12] font-sans pb-48 px-6 overflow-hidden">
+    <section className="relative w-full bg-[#0B0E12] font-sans pb-48 px-6 overflow-hidden transform-gpu">
       
       {/* Fondo con la imagen de puntos */}
       <div 

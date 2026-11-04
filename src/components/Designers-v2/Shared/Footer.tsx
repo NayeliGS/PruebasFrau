@@ -4,7 +4,7 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full flex justify-center p-6 mt-10 font-sans overflow-hidden">
+    <div className="w-full flex justify-center p-6 mt-10 font-sans overflow-hidden transform-gpu">
       
       <div className="w-full max-w-[1300px] relative">
       
