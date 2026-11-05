@@ -60,7 +60,7 @@ export const HeroAbout = () => {
           {/* Sub-columna Izquierda */}
           <div className="flex-1 flex flex-col gap-6 z-10">
             {/* Tarjeta 1: Imagen Candado (Alta) */}
-            <div className="relative w-full h-[320px] rounded-3xl overflow-hidden border border-white/10">
+            <div className="relative w-full h-[320px] rounded-3xl overflow-hidden transform-gpu border border-white/10">
               <img src="/designersV2/AboutUsCandado.png" alt="Seguridad" className="w-full h-full object-cover" />
             </div>
 
@@ -82,7 +82,7 @@ export const HeroAbout = () => {
             </div>
 
             {/* Tarjeta 4: Imagen Escudo (Alta) */}
-            <div className="relative w-full h-[320px] rounded-3xl overflow-hidden border border-white/10">
+            <div className="relative w-full h-[320px] rounded-3xl overflow-hidden transform-gpu border border-white/10">
               <img src="/designersV2/AboutUsSeguridad.png" alt="Escudo" className="w-full h-full object-cover" />
             </div>
           </div>
