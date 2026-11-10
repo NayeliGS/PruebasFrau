@@ -11,7 +11,7 @@ export const HeroAbout = () => {
       nameKey: 'about.founders.marlon.name',
       roleKey: 'about.founders.marlon.role',
       descKey: 'about.founders.marlon.desc',
-      imgSrc: '/designersV2/AboutUs/founders_Marlon.png',
+      imgSrc: '/designersV2/AboutUs/founders_Marlon.jpg',
       linkedin: '#'
     },
     {
@@ -19,7 +19,7 @@ export const HeroAbout = () => {
       nameKey: 'about.founders.juan.name',
       roleKey: 'about.founders.juan.role',
       descKey: 'about.founders.juan.desc',
-      imgSrc: '/designersV2/AboutUs/founders_Juan.png',
+      imgSrc: '/designersV2/AboutUs/founders_Juan.PNG',
       linkedin: '#'
     },
     {
@@ -27,20 +27,23 @@ export const HeroAbout = () => {
       nameKey: 'about.founders.christian.name',
       roleKey: 'about.founders.christian.role',
       descKey: 'about.founders.christian.desc',
-      imgSrc: '/designersV2/AboutUs/founders_Christian.png',
+      imgSrc: '/designersV2/AboutUs/founders_Christian.jpeg',
+      linkedin: '#'
+    },
+    {
+      id: 4,
+      nameKey: 'about.founders.jhon.name',
+      roleKey: 'about.founders.jhon.role',
+      descKey: 'about.founders.jhon.desc',
+      imgSrc: '/designersV2/AboutUs/founders_Jhon.jpg',
       linkedin: '#'
     }
   ];
 
   return (
-    <section className="relative w-full bg-[#0B0E12] flex flex-col gap-32 pt-20 pb-48 font-sans overflow-hidden z-10">
+    <section className="relative w-full bg-[#0B0E12] flex flex-col gap-32 pt-40 pb-48 font-sans overflow-hidden z-10">
       <div className="absolute top-[5%] right-[-10%] w-[800px] lg:w-[1000px] h-[1200px] bg-[#10F5C4]/15 blur-[150px] rounded-[100%] pointer-events-none z-0 "></div>
-      
-    
-
-      {/* ========================================================= */}
-      {/* PARTE 1: HERO (Texto a la izquierda, Video a la derecha) */}
-      {/* ========================================================= */}
+       {/* PARTE 1 */}
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 px-6">
         <div className="w-full lg:w-5/12 flex flex-col items-center text-center lg:items-start lg:text-left">
           <h1 className="font-medium text-[clamp(12px,5vw,30px)] leading-[1.2] tracking-[-0.01em] text-[#F9F9F9] mb-10 max-w-lg">
@@ -73,10 +76,7 @@ export const HeroAbout = () => {
           </div>
         </div>
       </div>
-
-      {/* ========================================================= */}
-      {/* PARTE 2: MISIÓN (Bento Box a la izquierda, Texto a la derecha) */}
-      {/* ========================================================= */}
+      {/* PARTE 2 */}
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20 px-6">
         <div className="w-full lg:w-1/2 flex flex-col md:flex-row gap-6 relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#10F5C4]/10 blur-[120px] rounded-full pointer-events-none z-0 transform-gpu"></div>
@@ -120,15 +120,13 @@ export const HeroAbout = () => {
         </div>
       </div>
 
-      {/* ========================================================= */}
-      {/* PARTE 3: FUNDADORES (Tarjetas con Hover) */}
-      {/* ========================================================= */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center px-6 mt-16">
-        <h2 className="text-[#F9F9F9] text-center font-semibold text-[clamp(32px,4vw,40px)] leading-[1.2] tracking-[-0.01em] mb-20 max-w-2xl">
+      {/* PARTE 3 */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center px-6 ">
+        <h2 className="text-[#F9F9F9] text-center font-semibold text-[clamp(32px,4vw,40px)] leading-[1.2] tracking-[-0.01em] mb-18 max-w-2xl">
           {t('about.founders.title')}
         </h2>
 
-        <div className="w-full flex flex-col lg:flex-row gap-6 h-auto lg:h-[550px] mb-32">
+        <div className="w-full flex flex-col lg:flex-row gap-4 h-auto lg:h-[550px] mb-32">
           {founders.map((founder) => {
             const isHovered = hovered === founder.id;
             const isAnyHovered = hovered !== null;

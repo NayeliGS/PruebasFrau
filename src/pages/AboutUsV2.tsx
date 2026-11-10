@@ -12,7 +12,7 @@ export const AboutUsV2 = () => {
       
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#10F5C4]/15 blur-[150px] rounded-full pointer-events-none z-0"></div>
 
-        <main className="flex-grow flex flex-col items-center w-full relative z-10 py-20 gap-32">        
+        <main className="flex-grow flex flex-col items-center w-full relative z-10 py-2 gap-32">        
      
         <HeroAbout />
         <PartnersAbout/>

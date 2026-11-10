@@ -167,8 +167,13 @@ export const es = {
       },
       juan: {
         name: "Juan Franco",
-        role: "COO & Co-Founder",
+        role: "Chief Strategy & Grow Officer",
         desc: "Constructor comercial apasionado, con un agudo ojo para la oportunidad y el crecimiento. Con más de 20 años de experiencia en banca y fintech, tiene un historial comprobado de convertir ideas en tracción y escalar ventures en etapas tempranas hasta transformarlas en negocios de alto impacto. Como fundador de SmartCoin, lideró la compañía a más de 700K transacciones y ~COP $100B en volumen, culminando en un exit exitoso a Prosegur."
+      },
+      jhon: {
+        name: "Jhon Rivera",
+        role: "Director de tecnología",
+        desc: "Ingeniero de software con 6 años construyendo sistemas críticos para bancos líderes, una de las mayores compañías de entretenimiento del mundo y plataformas de facturación electrónica, con clientes en Colombia, Perú y Estados Unidos. Ha desarrollado microservicios en Java y Spring Boot para core bancario y sistemas reactivos de alto tráfico sobre AWS, Azure y GCP, y ha migrado sistemas legacy reduciendo hasta en un 60 % los tiempos de entrega."
       },
       christian: {
         name: "Christian Toro",
