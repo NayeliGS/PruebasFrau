@@ -89,17 +89,14 @@ export const HeroAbout = () => {
 
         </div>
 
-        {/* COLUMNA DERECHA: Textos Descriptivos */}
+        
         <div className="w-full lg:w-1/2 flex flex-col items-start text-left">
-          {/* 👇 TÍTULO SECUNDARIO: Tipografía fluida con clamp */}
           <h2 className="font-semibold text-[clamp(12px,5vw,30px)] leading-[1.1] tracking-[-0.015em] text-[#FFFFFF] mb-6">
             {t('about.mission.title')}
           </h2>
-          
           <p className="font-normal text-[clamp(12px,5vw,24px)] leading-[28px] tracking-[-0.01em] text-[#A1A8B0] mb-10">
             {t('about.mission.subtitle')}
           </p>
-          
           <button className="bg-[#F9F9F9] text-[#10151B] px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-200 transition-colors">
             {t('about.mission.btn')}
           </button>

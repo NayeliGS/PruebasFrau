@@ -6,7 +6,6 @@ export const HeroHomeAuro = () => {
   return (
     <section className="relative w-full min-h-screen bg-[#0B0E12] overflow-hidden flex flex-col items-center justify-center px-6">
       
-      {/* --- ESTILOS DE LA LINTERNA (TRAYECTORIA PERIMETRAL VELOZ EN COSTADOS) --- */}
       <style>{`
         @keyframes perimeterFlashlight {
           0% {
@@ -52,9 +51,6 @@ export const HeroHomeAuro = () => {
         }
       `}</style>
 
-      {/* ========================================== */}
-      {/* CAPA 1: FONDO NEGRO Y TEXTOS APAGADOS      */}
-      {/* ========================================== */}
       
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(16,245,196,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(16,245,196,0.03)_1px,transparent_1px)] bg-[size:40px_40px] opacity-30"></div>
@@ -73,15 +69,11 @@ export const HeroHomeAuro = () => {
         </div>
       </div>
 
-      {/* ========================================== */}
-      {/* CAPA 2: LA LUZ REVELADORA (MÁSCARA ANIMADA)*/}
-      {/* ========================================== */}
       <div className="absolute inset-0 z-20 pointer-events-none aurora-flashlight">
         
         <div className="absolute inset-0 bg-[#10F5C4]/10"></div>
         <div className="absolute inset-0 bg-[linear-gradient(rgba(16,245,196,0.30)_1px,transparent_1px),linear-gradient(90deg,rgba(16,245,196,0.30)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-        
-        {/* Los 16 Core Sparks originales */}
+    
         <div className="absolute top-[25%] left-[25%] w-10 h-10 flex items-center justify-center">
           <div className="absolute inset-0 bg-[#10F5C4] blur-md rounded-full animate-[ping_3s_infinite]"></div>
           <div className="w-3 h-3 bg-white rounded-full z-10 shadow-[0_0_10px_white]"></div>
@@ -147,7 +139,6 @@ export const HeroHomeAuro = () => {
           <div className="w-1.5 h-1.5 bg-white rounded-full z-10 shadow-[0_0_5px_white]"></div>
         </div>
 
-        {/* 7 Destellos Lado Derecho */}
         <div className="absolute top-[18%] right-[8%] w-8 h-8 flex items-center justify-center">
           <div className="absolute inset-0 bg-teal-400 blur-sm rounded-full animate-[ping_4.1s_infinite]"></div>
           <div className="w-2 h-2 bg-white rounded-full z-10 shadow-[0_0_8px_white]"></div>
@@ -177,7 +168,6 @@ export const HeroHomeAuro = () => {
           <div className="w-2 h-2 bg-white rounded-full z-10 shadow-[0_0_8px_white]"></div>
         </div>
 
-        {/* Textos Neón Brillantes */}
         <div className="absolute inset-0 flex flex-col items-center justify-center px-6">
           <div className="w-full max-w-4xl mx-auto text-center mt-32 pointer-events-auto flex flex-col items-center">
             <h1
@@ -193,16 +183,12 @@ export const HeroHomeAuro = () => {
 
       </div>
 
-      {/* ========================================== */}
-      {/* CAPA 3: BOTÓN SIEMPRE VISIBLE (FUERA DE LA MÁSCARA) */}
-      {/* ========================================== */}
       <div className="absolute inset-0 z-30 flex flex-col items-center justify-center px-6 pointer-events-none">
         <div className="w-full max-w-4xl mx-auto text-center mt-32 flex flex-col items-center">
           
           <h1 className="font-bold text-[48px] md:text-[72px] leading-[1.1] tracking-[-0.02em] mb-6 opacity-0" dangerouslySetInnerHTML={{ __html: t('home.hero.title') }}></h1>
           <p className="text-[18px] md:text-[20px] font-medium max-w-3xl mx-auto leading-[1.6] mb-12 opacity-0">{t('home.hero.subtitle')}</p>
           
-          {/* BOTÓN REAL */}
           <button className="w-[200px] h-[48px] mx-auto bg-[#10F5C4] rounded-lg text-[#10151B] font-semibold text-[16px] leading-[20px] tracking-wide hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(16,245,196,0.4)] pointer-events-auto cursor-pointer">
             {t('home.hero.cta')}
           </button>

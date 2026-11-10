@@ -25,8 +25,7 @@ export const HomePlatform = () => {
 
   return (
     <section className="relative w-full bg-[#0B0E12] py-20 flex flex-col items-center overflow-hidden">
-      
-      {/* Luz de Fondo */}
+
       <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[#10F5C4]/5 blur-[150px] rounded-full pointer-events-none z-0"></div>
 
       <style>{`
@@ -40,8 +39,7 @@ export const HomePlatform = () => {
       `}</style>
 
       <div className="w-full max-w-7xl mx-auto px-6 relative z-10">
-        
-        {/* ================= PARTE 1: EL VIDEO ================= */}
+    
         <div className="w-full aspect-video md:h-[600px] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] bg-[#050709] relative mb-24 flex items-center justify-center">
           <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
             <source src="/designersV2/videos/fraudeg-intro.mp4" type="video/mp4" />
@@ -49,7 +47,6 @@ export const HomePlatform = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E12]/80 via-transparent to-transparent pointer-events-none"></div>
         </div>
 
-        {/* ================= PARTE 2: CARRUSEL ================= */}
         <div className="w-full flex flex-col items-center mb-32">
           <p className="text-[#F9F9F9] font-medium text-[16px] md:text-[18px] mb-10 text-center">
             {t('home.platform.trustedBy')}
@@ -69,7 +66,6 @@ export const HomePlatform = () => {
           </div>
         </div>
 
-        {/* ================= PARTE 3: CARD CON COLORES ANTIGUOS ================= */}
         <div 
           ref={cardRef}
           className={`w-full max-w-5xl mx-auto rounded-[2rem] p-10 md:p-14 flex flex-col lg:flex-row gap-10 md:gap-20 transition-colors duration-[3500ms] ease-in-out border shadow-2xl ${
@@ -78,7 +74,6 @@ export const HomePlatform = () => {
               : 'bg-[#EBF3F0] text-[#141A21] border-[#EBF3F0]' 
           }`}
         >
-          {/* Lado Izquierdo (Texto y Botón) */}
           <div className="flex-1 flex flex-col justify-between items-start">
             <h3 className="text-[28px] md:text-[32px] lg:text-[36px] font-medium leading-[1.3] tracking-[-0.01em] mb-12">
               {t('home.platform.cardDesc')}
@@ -97,7 +92,6 @@ export const HomePlatform = () => {
             </button>
           </div>
 
-          {/* Lado Derecho (Estadísticas Centradas con Separadores) */}
           <div className="w-full lg:w-1/3 flex flex-col items-center justify-center">
             {['stat1', 'stat2', 'stat3'].map((stat, i) => (
               <div key={stat} className="w-full">
@@ -117,7 +111,6 @@ export const HomePlatform = () => {
           </div>
         </div>
 
-        {/* ================= PARTE 4: BENTO BOX ================= */}
         <div className="w-full mt-40 flex flex-col">
           
           <div className="flex flex-col items-start mb-12">
@@ -132,7 +125,6 @@ export const HomePlatform = () => {
           <div className="grid grid-cols-1 md:grid-cols-6 gap-6 w-full">
             
             <div className="md:col-span-3 bg-[#10151B] border border-white/5 rounded-[2rem] overflow-hidden flex flex-col">
-              {/* Degradado restaurado */}
               <div className="h-[220px] w-full bg-gradient-to-br from-[#A5C8F7] to-[#7B9FE9]"></div>
               <div className="p-8 flex flex-col items-start flex-grow">
                 <span className="text-xs font-semibold text-[#10F5C4] uppercase flex items-center gap-2 mb-4">
@@ -147,7 +139,6 @@ export const HomePlatform = () => {
             </div>
 
             <div className="md:col-span-3 bg-[#10151B] border border-white/5 rounded-[2rem] overflow-hidden flex flex-col">
-              {/* Degradado restaurado */}
               <div className="h-[220px] w-full bg-gradient-to-br from-[#9BE69A] to-[#4595E7]"></div>
               <div className="p-8 flex flex-col items-start flex-grow">
                 <span className="text-xs font-semibold text-[#10F5C4] uppercase flex items-center gap-2 mb-4">
@@ -162,7 +153,6 @@ export const HomePlatform = () => {
             </div>
 
             <div className="md:col-span-4 bg-[#10151B] border border-white/5 rounded-[2rem] overflow-hidden flex flex-col">
-              {/* Degradado restaurado */}
               <div className="h-[220px] w-full bg-gradient-to-br from-[#6CF4F5] to-[#2563EB]"></div>
               <div className="p-8 flex flex-col items-start flex-grow">
                 <span className="text-xs font-semibold text-[#10F5C4] uppercase flex items-center gap-2 mb-4">
@@ -177,7 +167,6 @@ export const HomePlatform = () => {
             </div>
 
             <div className="md:col-span-2 bg-[#10151B] border border-white/5 rounded-[2rem] overflow-hidden flex flex-col">
-              {/* Degradado restaurado */}
               <div className="h-[220px] w-full bg-gradient-to-br from-[#77C1F2] to-[#214CCB]"></div>
               <div className="p-8 flex flex-col items-start flex-grow">
                 <span className="text-xs font-semibold text-[#10F5C4] uppercase flex items-center gap-2 mb-4">

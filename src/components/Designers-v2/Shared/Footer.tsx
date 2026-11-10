@@ -8,18 +8,12 @@ export const Footer = () => {
       
       <div className="w-full max-w-[1300px] relative">
       
-        {/* --- NUEVO: Degradado central superior para resaltar los círculos --- */}
         <div className="absolute -top- left-1/2 -translate-x-1/2 w-[350px] h-[350px] bg-[#10F5C4]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
-
-        {/* Degradados existentes */}
         <div className="absolute -bottom-1 -left-26 w-90 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
         <div className="absolute -bottom-16 -right-17 w-90 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
         
         <footer className="relative z-10 w-full bg-[#050709] border border-white/5 rounded-3xl py-12 px-8 md:px-16 flex flex-col shadow-2xl mt-8">
-          
-          {/* --- Círculos sobresaliendo del footer con Redes Sociales --- */}
           <div className="absolute -top-[36px] left-1/2 -translate-x-1/2 flex gap-6 z-20">
-            {/* Círculo 1: LinkedIn */}
             <a 
               href="https://www.linkedin.com/company/fraudeg/home/" 
               target="_blank"
@@ -32,7 +26,6 @@ export const Footer = () => {
               </svg>
             </a>
 
-            {/* Círculo 2: WhatsApp */}
             <a 
               href="https://wa.me/573175803562" 
               target="_blank"
@@ -50,7 +43,7 @@ export const Footer = () => {
             
             <div className="md:col-span-2 flex flex-col gap-6 md:pr-16">
               <div className="flex items-center gap-2 cursor-pointer mb-1">
-                {/* Logo en SVG */}
+              
                 <img 
                   src="/designersV2/LogoFraudeg.svg" 
                   alt="FraudEG Logo" 

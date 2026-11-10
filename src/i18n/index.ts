@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { es } from './es';
 import { en } from './en';
-import { ptBR } from './pt-BR'; // Importamos portugués
+import { ptBR } from './pt-BR'; 
 
 i18n
   .use(initReactI18next)
@@ -10,10 +10,10 @@ i18n
     resources: {
       es: { translation: es },
       en: { translation: en },
-      'pt-BR': { translation: ptBR } // Lo agregamos a los recursos
+      'pt-BR': { translation: ptBR } 
     },
-    lng: 'es', // Idioma de arranque
-    fallbackLng: 'en', // Si falta un texto, usa inglés por defecto
+    lng: 'es', 
+    fallbackLng: 'en', 
     interpolation: { escapeValue: false }
   });
 

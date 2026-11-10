@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom'; 
 
@@ -6,6 +6,22 @@ export const Navbar = () => {
   const { t } = useTranslation();
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+ 
+  useEffect(() => {
+    const handleScroll = () => {
+    
+      if (window.scrollY > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { id: 'home', name: t('navbar.home'), href: '/' },
@@ -13,17 +29,21 @@ export const Navbar = () => {
     { id: 'plans', name: t('navbar.plans'), href: '/planes' },
     { id: 'about', name: t('navbar.aboutUs'), href: '/sobre-nosotros' },
     { id: 'blog', name: t('navbar.blog'), href: '/blog' },
-    { id: 'fonts', name: 'Fonts', href: '/fonts' },
+    
   ];
 
   return (
     <div className="fixed top-0 left-0 z-50 w-full flex justify-center p-6 pointer-events-none">
       
-      <nav className="pointer-events-auto w-full max-w-[1300px] bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col md:flex-row md:items-center justify-between px-6 md:px-8 font-sans shadow-lg">
+      
+      <nav className={`pointer-events-auto w-full max-w-[1300px] rounded-2xl flex flex-col md:flex-row md:items-center justify-between px-6 md:px-8 font-sans shadow-lg transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-[#050709] border border-[#222E3F]' 
+          : 'bg-white/5 backdrop-blur-md border border-white/10' 
+      }`}>
         
         <div className="flex items-center justify-between w-full md:w-auto h-[64px]">
           <div className="flex items-center gap-2 cursor-pointer">
-            {/* CORRECCIÓN 1: Reemplazo del texto por el logo SVG */}
             <Link to="/" className="hover:opacity-80 transition-opacity flex items-center">
               <img src="/designersV2/LogoFraudeg.svg" alt="FraudEG" className="h-6 md:h-7 w-auto" />
             </Link>
@@ -47,7 +67,6 @@ export const Navbar = () => {
         
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {
-            {/* CORRECCIÓN 2: Eliminamos la regla doble y dejamos coincidencia exacta */}
             const isActive = location.pathname === link.href;
             
             return (
@@ -82,11 +101,9 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {/* Menú Desplegable para Móvil */}
         {isOpen && (
           <div className="md:hidden flex flex-col gap-4 pb-6 pt-4 border-t border-white/10 w-full animate-fade-in">
             {navLinks.map((link) => {
-              {/* También aplicamos la corrección aquí para móvil */}
               const isActive = location.pathname === link.href;
               return (
                 <Link

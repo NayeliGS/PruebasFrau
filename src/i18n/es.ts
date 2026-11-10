@@ -258,5 +258,89 @@ export const es = {
       bentoBtn4: "Conocer el módulo"
     }
 },
+plans: {
+    heroTitle: "Nuestros planes comienzan desde",
+    heroPrice: "$999 USD/mes",
+    heroSubtitle: "Cada plan se ajusta a tu volumen de transacciones y a las soluciones que necesitas. Te armamos una propuesta a la medida.",
+    solutionsLabel: "Soluciones",
+    essential: {
+      name: "Essential",
+      desc: "Para empezar a medir el fraude en tu operación.",
+      capacity: "Hasta 50K\ntransacciones/mes",
+      coreFeatures: [
+        "Historical Tracker"
+      ],
+      extraFeatures: [
+        "Análisis histórico de transacciones",
+        "Panel de reportes",
+        "Soporte por correo"
+      ]
+    },
+    growth: {
+      name: "Growth",
+      desc: "Para decidir sobre cada transacción en tiempo real.",
+      capacity: "Hasta 250K\ntransacciones/mes",
+      coreFeatures: [
+        "Historical Tracker",
+        "Real Time Inspector"
+      ],
+      extraFeatures: [
+        "Todo lo de Essential",
+        "Decisiones en tiempo real por API",
+        "Reglas personalizables",
+        "Soporte en horario hábil"
+      ]
+    },
+    pro: {
+      name: "Pro",
+      desc: "Para equipos de riesgo que gestionan casos a diario.",
+      capacity: "Hasta 1M\ntransacciones/mes",
+      coreFeatures: [
+        "Historical Tracker",
+        "Real Time Inspector",
+        "Smart Monitor"
+      ],
+      extraFeatures: [
+        "Todo lo de Growth",
+        "Monitoreo continuo con IA",
+        "Alertas y gestión de casos",
+        "Gerente de cuenta"
+      ]
+    },
+    scale: {
+      name: "Scale",
+      desc: "Para operaciones de alto volumen en varios mercados.",
+      capacity: "Hasta 5M\ntransacciones/mes",
+      coreFeatures: [
+        "Historical Tracker",
+        "Real Time Inspector",
+        "Smart Monitor",
+        "Fraud Intelligence"
+      ],
+      extraFeatures: [
+        "Todo lo de Pro",
+        "Red de inteligencia compartida",
+        "SLA de 99,9%",
+        "Soporte 24/7"
+      ]
+    },
+    enterprise: {
+      name: "Enterprise",
+      desc: "Para organizaciones con requisitos propios.",
+      capacity: "Volumen\na la medida",
+      coreFeatures: [
+        "Historical Tracker",
+        "Real Time Inspector",
+        "Smart Monitor",
+        "Fraud Intelligence"
+      ],
+      extraFeatures: [
+        "Todo lo de Scale",
+        "Despliegue dedicado",
+        "Modelos entrenados con tus datos",
+        "SLA y soporte a la medida"
+      ]
+    }
+  },
 
 }
