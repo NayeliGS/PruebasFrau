@@ -147,13 +147,15 @@ export const es = {
     openMenu: "Abrir menú de accesibilidad"
   },
   about: {
-    heroTitle: "Construimos el futuro de la confianza transaccional convertirnos en la capa de inteligencia de los sistemas transaccionales, donde cada transacción se evalúa, entiende y optimiza en tiempo real.",
+    heroTitle: "Construimos la confianza que tu negocio necesita para crecer en digital.",
+    heroTitle1: "Nacimos dentro del problema. Llevamos décadas en banca, fintech y prevención de fraude, viendo cómo las soluciones tradicionales reaccionan tarde y por partes. Por eso creamos FraudEG: la capa de inteligencia que evalúa, entiende y decide cada transacción en tiempo real, para que tú crezcas sin miedo a lo que el fraude te pueda costar.",
     heroBtn: "Habla con nuestro equipo",
     mission: {
-      card1: "Una capa central del ciclo transaccional, no un dashboard encima.",
-      card2: "Modelos que mejoran continuamente con cada transacción procesada.",
-      title: "La prevención de fraude no debería ser reactiva, fragmentada ni estática.",
-      subtitle: "Nuestra misión a largo plazo es convertirnos en la capa de inteligencia de los sistemas transaccionales, donde cada transacción se evalúa, entiende y optimiza en tiempo real.",
+      card1: "Una sola plataforma. Cero integraciones fragmentadas.",
+      card2: "Cada día más inteligente, sin que tengas que ajustar nada",
+      title: "Deja atrás la prevención reactiva, fragmentada y estática",
+      subtitle: "Deja de enterarte del fraude cuando ya es pérdida. Con FraudEG, cada transacción se evalúa, se entiende y se decide en tiempo real, dentro de tu propio flujo.",
+      subtitle1: "El resultado: menos fraude, más clientes buenos aprobados y un equipo que por fin trabaja en lo que importa.",
       btn: "Cómo funciona"
     },
     founders: {

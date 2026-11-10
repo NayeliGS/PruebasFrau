@@ -2,7 +2,6 @@ import { Navbar } from "../components/Designers-v2/Shared/Navbar";
 import { Footer } from "../components/Designers-v2/Shared/Footer";
 import { AccessibilityMenu } from "../components/Designers-v2/Shared/AccessibilityMenu";
 import { HeroAbout } from "../components/Designers-v2/AboutUs/HeroAbout";
-import { FoundersAbout } from "../components/Designers-v2/AboutUs/FoundersAbout";
 import { PartnersAbout } from "../components/Designers-v2/AboutUs/PartnersAbout";
 
 export const AboutUsV2 = () => {
@@ -16,7 +15,6 @@ export const AboutUsV2 = () => {
         <main className="flex-grow flex flex-col items-center w-full relative z-10 py-20 gap-32">        
      
         <HeroAbout />
-        <FoundersAbout />
         <PartnersAbout/>
         <AccessibilityMenu />
       </main>
