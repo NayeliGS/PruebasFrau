@@ -12,6 +12,8 @@ function App() {
         <Route path="/soluciones" element={<SolutionsV2 />} />
         <Route path="/sobre-nosotros" element={<AboutUsV2 />} />
         <Route path="/planes" element={<PlansV2 />} />
+       
+        
       </Routes>
     </BrowserRouter>
   );

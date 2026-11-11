@@ -8,7 +8,6 @@ export const HeroPlans = () => {
   return (
     <section className="relative w-full flex flex-col items-center pt-32 pb-16 px-6 font-sans ">
       
-      {/* 1. FONDO DEGRADADO V0 (CORRECCIÓN DE BORDES: 'scale-[1.2]' expande el fondo fuera de los bordes para que no se vea el corte, y 'translate3d' arregla el bug de renderizado) */}
       <div 
         className="absolute inset-0 z-0 pointer-events-none scale-[1.2]"
         style={{
@@ -22,16 +21,12 @@ export const HeroPlans = () => {
         }}
       ></div>
 
-      {/* 2. MALLA GRISÁCEA / RUIDO PARA MATEAR EL BRILLO */}
       <div className="absolute w-40 inset-0 z-[1] pointer-events-none opacity-40 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+')] mix-blend-overlay"></div>
       
-      {/* Difuminado inferior */}
       <div className="absolute inset-0 z-[2] bg-gradient-to-b from-transparent via-transparent to-[#0B0E12]"></div>
 
-      {/* Contenedor de contenido protegido por z-10 */}
       <div className="relative z-10 w-full flex flex-col items-center">
         
-        {/* Encabezado de la sección */}
         <div className="flex flex-col items-center w-full max-w-4xl text-center mb-16">
           <h1 className="text-white font-semibold text-[36px] md:text-[48px] leading-[1.2] tracking-[-0.01em] mb-6">
             {t('plans.heroTitle')} <span className="text-[#10F5C4]">{t('plans.heroPrice')}</span>
@@ -41,7 +36,6 @@ export const HeroPlans = () => {
           </p>
         </div>
 
-        {/* Contenedor de las Tarjetas */}
         <div className="w-full max-w-[1400px] flex flex-col xl:grid xl:grid-cols-5 gap-6 pb-8">
           {tiers.map((tierKey) => {
             const isPro = tierKey === 'pro';
@@ -62,20 +56,16 @@ export const HeroPlans = () => {
                   {t(`plans.${tierKey}.desc`)}
                 </p>
                 
-                {/* Capacidad */}
                 <div className="text-white font-semibold text-[16px] leading-[24px] mb-6 whitespace-pre-line min-h-[48px]">
                   {t(`plans.${tierKey}.capacity`)}
                 </div>
 
-                {/* Línea divisoria degradada */}
                 <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-[#10F5C4] to-transparent opacity-60 mb-6"></div>
 
-                {/* Etiqueta separadora */}
                 <span className="text-[#475467] text-[12px] uppercase tracking-widest font-semibold mb-6 block">
                   {t('plans.solutionsLabel')}
                 </span>
 
-                {/* Lista de Soluciones Principales */}
                 <ul className="flex flex-col gap-4 mb-8">
                   {(t(`plans.${tierKey}.coreFeatures`, { returnObjects: true }) as string[]).map((feat, i) => (
                     <li key={i} className="flex items-center gap-3 text-white text-[14px] font-medium">
@@ -85,7 +75,6 @@ export const HeroPlans = () => {
                   ))}
                 </ul>
 
-                {/* Lista de Funciones Extra */}
                 <ul className="flex flex-col gap-4 mt-auto pt-4">
                   {(t(`plans.${tierKey}.extraFeatures`, { returnObjects: true }) as string[]).map((feat, i) => (
                     <li key={i} className="flex items-start gap-3">

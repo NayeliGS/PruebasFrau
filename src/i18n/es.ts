@@ -182,50 +182,46 @@ export const es = {
       }
     },
     team: {
-      title: "Nuestro Equipo",
+      title: "Colaboradores",
+      title1: "Nuestra plataforma fue generada gracias al apoyo de profesionales en su área:",
       members: [
-        { name: "Jhon", role: "Lead" },
-        { name: "Alice", role: "Designer" },
-        { name: "Mark", role: "Developer" },
-        { name: "Sophia", role: "Product Manager" },
-        { name: "David", role: "Marketing " },
-        { name: "Jhon", role: "Lead" },
-        { name: "Alice", role: "Designer" },
-        { name: "Mark", role: "Developer" },
-        { name: "Sophia", role: "Product Manager" },
-        { name: "David", role: "Marketing " }
+        { name: "Agustina Maurino", role: "Data & Interface Designer, App", image: "Agustina.jpg", linkedin: "#" },
+        { name: "Alejandro Chávez", role: "Product Owner", image: "Diego Alejandro.png", linkedin: "https://www.linkedin.com/in/diegochbe" },
+        { name: "Andrés Campillo", role: "Diseñador UX/UI", image: "Andres.jpg", linkedin: "#" },
+        { name: "Daniela Londoño", role: "Brand & Content Designer", image: "Daniela.jpg", linkedin: "#" },
+        { name: "Ignacio Salagoity", role: "Front end / QA / Accesibilidad digital / UX Designer", image: "Ignacio.jpg", linkedin: "#" },
+        { name: "Jhon Rivera", role: "Director de tecnología", image: "Jhon.jpg", linkedin: " https://www.linkedin.com/in/jhon-edward-rivera-05012000-engineer" },
+        { name: "Jorge Ruiz", role: "Lead Product Designer", image: "Jorge.jpg", linkedin: "#" },
+        { name: "Julián Calderón", role: "Lead Product Designer", image: "Julián.jpg", linkedin: "#" },
+        { name: "Nayeli González", role: "Front-end / Diseñadora UX/UI", image: "Nayeli.jpg", linkedin: "#" },
+        { name: "Serena Figueiro", role: "Product Designer, App", image: "Serena.jpeg", linkedin: "https://www.linkedin.com/in/serena-mali-figueiro-4a19a2240/" },
+        { name: "Sofia Cuerdo", role: "UX/UI Designer", image: "Sofia.jpg", linkedin: "https://www.linkedin.com/in/socuerdo/" }
       ],
     },
     advisors: {
       title: "Board of Advisors",
       subtitle: "El Board of Advisors está formado por miembros procedentes de reconocidas organizaciones e industrias globales.",
-      carlos: {
-        name: "Carlos Rojas",
-        desc: "Ingeniero de software (ex Google, Disney, Globant, Ontop) especializado en sistemas escalables, arquitecturas distribuidas y seguridad global. Impacto en más de 60 países y más de 160M de usuarios—incluso el Super Bowl. Profundamente apasionado por la computación, la enseñanza y la construcción de sistemas que permiten a los equipos crecer y rendir al máximo."
+      jaime: {
+        name: "Jaime A. Zawadzki",
+        name1: "BOA Founding Member",
+        desc: "Más de 35 años de trayectoria ejecutiva, ha liderado algunas de las compañías más importantes de Latinoamérica como Gerente General de Easy Chile, Easy Colombia y Almacenes Corona, así como Chief Financial Officer (CFO) de Avianca y de Propilco (hoy Esenttia, empresa del Grupo Ecopetrol). Adicionalmente aporta su experiencia como miembro de juntas directivas, consejos asesores, mentor empresarial y miembro de la Junta Directiva del Foro de Presidentes de la Cámara de Comercio de Bogotá."
       },
-      emily: {
-        name: "Emily Rodriguez",
-        desc: "Ingeniero de software (ex Google, Disney, Globant, Ontop) especializado en sistemas escalables, arquitecturas distribuidas y seguridad global. Impacto en más de 60 países y más de 160M de usuarios—incluso el Super Bowl. Profundamente apasionado por la computación, la enseñanza y la construcción de sistemas que permiten a los equipos crecer y rendir al máximo."
-      },
+      
     },
     partners: {
       title: "Aliados\nEstratégicos",
       subtitle: "Respaldados por\nlos mejores",
       partner1: {
-        name: "Grupo Bancolombia",
-        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
+        name: "Startup Finance Partner (SFP)",
+        desc: "Nuestra gestión financiera está respaldada por SFP, firma de consultoría especializada en finanzas estratégicas y estructuración para startups. Su acompañamiento nos permite diseñar modelos escalables, optimizar la asignación de capital y sostener un crecimiento financiero sólido, ordenado y preparado para rondas de inversión."
       },
       partner2: {
-        name: "Grupo Bancolombia",
-        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
+        name: "Dentons Cárdenas & Cárdenas",
+        desc: "En el ámbito legal contamos con el respaldo de Dentons Cárdenas & Cárdenas, la firma global de abogados más grande del mundo y referente en Colombia. Esta alianza estratégica garantiza los más altos estándares jurídicos, seguridad regulatoria y máxima solidez en cada una de nuestras operaciones."
       },
       partner3: {
-        name: "Grupo Bancolombia",
-        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
-      },
-      partner4: {
-        name: "Grupo Bancolombia",
-        desc: "Uno de los bancos principales de Colombia que se encarga de la banca, abren cuentas de ahorros, corrientes, inversiones, etc."
+        name: "Founder Institute: Graduados de la Cohorte Latam 2026",
+        desc: "Fuimos seleccionados y graduados de Founder Institute, la aceleradora de startups en etapa temprana más grande del mundo, obteniendo la calificación más alta de la cohorte LATAM 2026. Este reconocimiento valida la solidez de nuestro modelo de negocio, nuestra capacidad de ejecución y nos conecta con una red global de mentores e inversionistas de primer nivel para escalar con los más altos estándares de la industria."
       },
     },
   },
@@ -349,5 +345,104 @@ plans: {
       ]
     }
   },
+  heroInfo: {
+    titleStart: "Mira qué habría detenido",
+    titleEnd: "en tu tráfico",
+    timelineAriaLabel: "Pasos del programa piloto",
+    timeline: {
+      step1: {
+        title: "Conversación inicial",
+        description: "Revisamos tu operación, los tipos de fraude que más te afectan y qué solución encaja mejor."
+      },
+      step2: {
+        title: "Conexión en modo observador",
+        description: "Exchange Guard analiza tu tráfico real en paralelo. Tus transacciones siguen su curso normal."
+      },
+      step3: {
+        title: "Informe de resultados",
+        description: "Te mostramos qué habríamos aprobado, revisado o bloqueado, y decides si avanzar."
+      }
+    },
+    featuresAriaLabel: "Garantías del servicio",
+    features: {
+      f1: "Sin tarjeta de crédito",
+      f2: "Análisis gratuito de fraude",
+      f3: "No afecta a tus clientes"
+    }
+  },
+
+  faq: {
+    title: "Preguntas Frecuentes",
+    items: {
+      q1: {
+        question: "¿El piloto bloquea transacciones?",
+        answer: "No. Durante el piloto operamos en modo observador en paralelo a tu flujo actual, por lo que ninguna transacción real de tus clientes se verá interrumpida."
+      },
+      q2: {
+        question: "¿Tiene algún costo?",
+        answer: "El análisis inicial durante el piloto es gratuito y no requiere tarjeta de crédito para su activación."
+      },
+      q3: {
+        question: "¿Qué necesito para empezar?",
+        answer: "Solo agendamos una breve sesión técnica para conectar el envío de eventos en paralelo mediante nuestra API."
+      },
+      q4: {
+        question: "¿Qué pasa al terminar?",
+        answer: "Te entregamos el informe completo con las detecciones realizadas y tú decides si deseas pasar a producción con nosotros."
+      }
+    }
+  },
+
+  pilotForm: {
+    title: "Solicita tu piloto",
+    successMsg: "¡Solicitud enviada con éxito! Nos pondremos en contacto pronto.",
+    submitBtn: "Solicitar Piloto",
+    labels: {
+      fullName: "Nombre completo",
+      role: "Cargo",
+      email: "Correo corporativo",
+      phone: "Teléfono",
+      company: "Empresa",
+      country: "País",
+      companyType: "Tipo de empresa",
+      otherCompanyType: "¿Cuál tipo de empresa?",
+      dedicatedTeamTitle: "Tenemos un equipo dedicado a reglas antifraude",
+      dedicatedTeamDesc: "Nos ayuda a preparar el piloto para que trabaje junto a tu equipo",
+      problem: "¿Qué problema de fraude quieres resolver?"
+    },
+    placeholders: {
+      fullName: "Ana Gómez",
+      role: "Head of Risk",
+      email: "ana@empresa.com",
+      phone: "300 123 4567",
+      company: "Nombre de la empresa",
+      companyType: "Selecciona una opción",
+      otherCompanyType: "Especifica el rubro o tipo de tu empresa",
+      problem: "Contracargos, cuentas falsas, abuso de promociones..."
+    },
+    options: {
+      fintech: "Banca/Fintech & PSP",
+      marketplaces: "MARKETPLACES",
+      retail: "RETAIL/Ecommerce",
+      other: "OTRA"
+    },
+    errors: {
+      fullName: "Ingresa tu nombre completo.",
+      role: "Ingresa tu cargo actual.",
+      email: "Ingresa un correo corporativo válido.",
+      phone: "Ingresa un número de teléfono.",
+      company: "Ingresa el nombre de tu empresa.",
+      companyType: "Selecciona el tipo de empresa.",
+      otherCompanyType: "Especifica cuál es el tipo de tu empresa."
+    },
+    aria: {
+      countryCode: "Código telefónico de país"
+    },
+    privacy: {
+      prefix: "Al enviar aceptas nuestra",
+      link: "política de privacidad",
+      suffix: "No compartimos tus datos."
+    }
+  }
 
 }
