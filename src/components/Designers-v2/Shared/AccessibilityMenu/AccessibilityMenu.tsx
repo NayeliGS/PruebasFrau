@@ -82,22 +82,17 @@ export const AccessibilityMenu = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-14 h-14 rounded-full shadow-xl transition-all flex items-center justify-center ml-auto border border-[#050709] ${
+        className={`w-14 h-14 rounded-full shadow-xl transition-all flex items-center justify-center ml-auto border border-[rgb(16,31,245)] ${
           isOpen
-            ? "bg-[#10F5C4] text-[#050709] hover:bg-[#10F5C4]/90"
+            ? "bg-[rgb(16,31,245)] text-[#050709] hover:bg-[#10F5C4]/90"
             : "bg-blue-600 text-white hover:bg-blue-700"
         }`}
         aria-label={t("accessibility.openMenu")}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          viewBox="0 0 16 16"
-        >
-          <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4.5 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H11v4a.5.5 0 0 1-1 0V11H6v4a.5.5 0 0 1-1 0V11H3.5a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8" />
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor" className="bi bi-universal-access-circle" viewBox="0 0 16 16">
+           <path d="M8 4.143A1.071 1.071 0 1 0 8 2a1.071 1.071 0 0 0 0 2.143m-4.668 1.47 3.24.316v2.5l-.323 4.585A.383.383 0 0 0 7 13.14l.826-4.017c.045-.18.301-.18.346 0L9 13.139a.383.383 0 0 0 .752-.125L9.43 8.43v-2.5l3.239-.316a.38.38 0 0 0-.047-.756H3.379a.38.38 0 0 0-.047.756Z"/>
+           <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8"/>
+            </svg>
       </button>
     </div>
   );

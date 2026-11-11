@@ -1,6 +1,5 @@
 import { Navbar } from "../components/Designers-v2/Shared/Navbar";
 import { Footer } from "../components/Designers-v2/Shared/Footer";
-import { AccessibilityMenu } from "../components/Designers-v2/Shared/AccessibilityMenu";
 
 
 import { HeroPlans } from "../components/Designers-v2/Plans/HeroPlans"; 
@@ -15,7 +14,7 @@ export const PlansV2 = () => {
         
         <HeroPlans />
         
-        <AccessibilityMenu />
+        
       </main>
 
       <Footer />

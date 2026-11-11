@@ -2,7 +2,6 @@ import { Navbar } from "../components/Designers-v2/Shared/Navbar";
 import { HeroSolutions } from "../components/Designers-v2/Solutions/HeroSolutions";
 import { PilotCTA } from "../components/Designers-v2/Shared/PilotCTA";
 import { Footer } from "../components/Designers-v2/Shared/Footer";
-import { AccessibilityMenu } from "../components/Designers-v2/Shared/AccessibilityMenu";
 import { SolutionsCatalog1 } from "../components/Designers-v2/Solutions/SolutionsCatalog1";
 
 export const SolutionsV2 = () => {
@@ -14,7 +13,7 @@ export const SolutionsV2 = () => {
 
         <SolutionsCatalog1 />
         <PilotCTA />
-        <AccessibilityMenu />
+        
       </main>
       <Footer />
     </div>
