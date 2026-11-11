@@ -30,7 +30,7 @@ export const PartnersAbout = () => {
   return (
     <section className="relative w-full px-6 overflow-hidden transform-gpu z-10">
       
-      <div className="absolute top-2/3 left-[-12%] -translate-y-1/2 w-[500px] md:w-[500px] h-[800px] bg-[#10F5C4]/25 blur-[180px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-[55%] left-[-22%] -translate-y-[85%] w-[400px] md:w-[300px] h-[300px] bg-[#10F5C4]/25 blur-[380px] rounded-full pointer-events-none z-0"></div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-16 lg:gap-24">
         

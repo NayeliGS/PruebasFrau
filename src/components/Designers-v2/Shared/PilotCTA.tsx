@@ -6,12 +6,13 @@ export const PilotCTA = () => {
   return (
     <section className="w-full flex justify-center py-16 px-6 font-sans">
       <div 
-        className="w-full max-w-[1300px] relative overflow-hidden transform-gpu rounded-[2.5rem] py-24 px-6 md:px-12 flex flex-col items-center shadow-2xl bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/designersV2/CTA Section.png')"
-        }}
+        className="w-full max-w-[1300px] relative overflow-hidden transform-gpu rounded-[2.5rem] py-10 px-6 md:px-12 flex flex-col items-center shadow-2xl bg-cover bg-center"
+        
       >
+        
         <div className="relative z-10 w-full max-w-5xl flex flex-col items-center">
+
+          
           
           
           <div className="w-full flex justify-center mb-6">

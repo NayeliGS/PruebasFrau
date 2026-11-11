@@ -4,11 +4,11 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full flex justify-center p-6 mt-10 font-sans overflow-hidden transform-gpu">
+    <div className="w-full flex justify-center p-15 mt-10 font-sans overflow-hidden transform-gpu">
       
       <div className="w-full max-w-[1300px] relative">
       
-        <div className="absolute -top- left-1/2 -translate-x-1/2 w-[350px] h-[350px] bg-[#10F5C4]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute -top- left-1/2 -translate-x-1/2 w-[40px] h-[350px] bg-[#10F5C4]/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
         <div className="absolute -bottom-1 -left-26 w-90 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
         <div className="absolute -bottom-16 -right-17 w-90 h-80 bg-[#10F5C4]/25 blur-[100px] rounded-full pointer-events-none z-0"></div>
         

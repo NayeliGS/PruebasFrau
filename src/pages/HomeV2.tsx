@@ -2,6 +2,7 @@ import { Navbar } from "../components/Designers-v2/Shared/Navbar";
 import { Footer } from "../components/Designers-v2/Shared/Footer";
 import { HeroHomeAuro } from '../components/Designers-v2/Home/HeroHomeAuro';
 import { HomePlatform } from "../components/Designers-v2/Home/HomePlatform";
+import { PilotCTA } from "../components/Designers-v2/Shared/PilotCTA";
 
 
 
@@ -19,6 +20,7 @@ export const HomeV2 = () => {
   
         
       </main>
+      <PilotCTA />
 
       <Footer />
     </div>

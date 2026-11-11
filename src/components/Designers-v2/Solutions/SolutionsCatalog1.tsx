@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 export const SolutionsCatalog1 = () => {
   return (
-    // Se elimina px-6 para permitir que el fondo de las cards toque los bordes de la pantalla
-    <section className="w-full flex flex-col items-center gap-3  font-sans overflow-hidden transform-gpu">
+    <section className="w-full flex flex-col items-center gap-3 font-sans overflow-hidden transform-gpu">
       <BatchCard />
       <LiveCard />
       <MonitorCard />
@@ -28,12 +27,10 @@ const BatchCard = () => {
     <div
       id="tracker"
       ref={cardRef}
-      // Contenedor externo: w-full sin max-w para abarcar toda la pantalla
       className={`w-full p-10 md:p-14 rounded-none rounded-tr-[4rem] rounded-bl-[4rem] shadow-2xl transition-colors duration-[5000ms] ease-in-out border scroll-mt-40 ${
         isVisible ? 'bg-[#141A21] text-white border-[#222E3F]' : 'bg-[#EBF3F0] text-[#141A21] border-[#EBF3F0]'
       }`}
     >
-      {/* Contenedor interno: max-w-6xl mx-auto para centrar el contenido */}
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
         <div className="flex-1 flex flex-col justify-center">
           <h2 className="text-[32px] font-bold leading-[46px] tracking-[-0.01em] ">
@@ -60,12 +57,18 @@ const BatchCard = () => {
           <h3 className="text-[17px] font-bold leading-[46px] text-[#10F5C4] tracking-[-0.01em] mt-4 ">
             {t('solutionsCatalog.batch.subtitleAccion')}
           </h3>
-          <h4 className="text-[14px] font-normal  text-gray-300 tracking-[-0.01em]  mb-4">
+          <h4 className="text-[14px] font-normal text-gray-300 tracking-[-0.01em] mb-4">
             {t('solutionsCatalog.batch.subtitleAccion2')}
           </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-green-300 via-teal-400 to-cyan-300 shadow-inner"></div>
+          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-green-300 via-teal-400 to-cyan-300 shadow-inner overflow-hidden relative flex items-center justify-center">
+                  <img 
+                    src="/designersV2/Solutions/historical.jpg" 
+                       alt="Historical Tracker" 
+                        className="w-[300px] h-[200px] object-cover" 
+                                 />
+                                           </div>
         </div>
       </div>
     </div>
@@ -117,12 +120,18 @@ const LiveCard = () => {
           <h3 className="text-[15px] font-bold leading-[46px] text-[#065F4C] tracking-[-0.01em] mt-4 ">
             {t('solutionsCatalog.live.subtitleAccion')}
           </h3>
-          <h4 className="text-[14px] font-normal  text-gray-700 tracking-[-0.01em]  mb-4">
+          <h4 className="text-[14px] font-normal text-gray-700 tracking-[-0.01em] mb-4">
             {t('solutionsCatalog.live.subtitleAccion2')}
           </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-cyan-300 to-blue-500 shadow-inner"></div>
+          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-cyan-300 to-blue-500 shadow-inner overflow-hidden relative flex items-center justify-center">
+            <img 
+                    src="/designersV2/Solutions/historical.jpg" 
+                       alt="Historical Tracker" 
+                        className="w-[300px] h-[200px] object-cover" 
+                                 />
+          </div>
         </div>
       </div>
     </div>
@@ -174,12 +183,18 @@ const MonitorCard = () => {
           <h3 className="text-[17px] font-bold leading-[46px] text-[#10F5C4] tracking-[-0.01em] mt-4 ">
             {t('solutionsCatalog.monitor.subtitleAccion')}
           </h3>
-          <h4 className="text-[14px] font-normal  text-gray-300 tracking-[-0.01em]  mb-4">
+          <h4 className="text-[14px] font-normal text-gray-300 tracking-[-0.01em] mb-4">
             {t('solutionsCatalog.monitor.subtitleAccion2')}
           </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-500 shadow-inner"></div>
+          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-500 shadow-inner overflow-hidden relative flex items-center justify-center">
+            <img 
+                    src="/designersV2/Solutions/smart.jpg" 
+                       alt="Smart Monitor" 
+                        className="w-[300px] h-[200px] object-cover" 
+                                 />
+          </div>
         </div>
       </div>
     </div>
@@ -231,12 +246,18 @@ const PatternsCard = () => {
           <h3 className="text-[15px] font-bold leading-[46px] text-[#065F4C] tracking-[-0.01em] mt-4 ">
             {t('solutionsCatalog.live.subtitleAccion')}
           </h3>
-          <h4 className="text-[14px] font-normal  text-gray-700 tracking-[-0.01em]  mb-4">
+          <h4 className="text-[14px] font-normal text-gray-700 tracking-[-0.01em] mb-4">
             {t('solutionsCatalog.live.subtitleAccion2')}
           </h4>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-orange-300 to-amber-500 shadow-inner"></div>
+          <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-orange-300 to-amber-500 shadow-inner overflow-hidden relative flex items-center justify-center">
+            <img 
+                    src="/designersV2/Solutions/fraud.jpg" 
+                       alt="Fraud Intelligence" 
+                        className="w-[300px] h-[200px] object-cover" 
+                                 />
+          </div>
         </div>
       </div>
     </div>
