@@ -343,7 +343,56 @@ plans: {
         "Modelos entrenados con tus datos",
         "SLA y soporte a la medida"
       ]
-    }
+    },
+    comparison: {
+      mainTitle: "Compara los planes en detalle",
+      solutions: {
+        title: "Soluciones",
+        subtitle: "Soluciones pensadas a la medida\npara que proyectes en tu empresa"
+      },
+      capacity: {
+        title: "Capacidad",
+        subtitle: "Soluciones pensadas a la medida\npara que proyectes en tu empresa"
+      },
+      features: {
+        title: "Funciones",
+        subtitle: "Soluciones pensadas a la medida\npara que proyectes en tu empresa"
+      },
+      support: {
+        title: "Soporte",
+        subtitle: "Soluciones pensadas a la medida\npara que proyectes en tu empresa"
+      },
+      rows: {
+        historicalTracker: "Historical Tracker",
+        realTimeInspector: "Real Time Inspector",
+        smartMonitor: "Smart Monitor",
+        fraudIntelligence: "Fraud Intelligence",
+        transactions: "Transacciones al mes",
+        users: "Usuarios del panel",
+        retention: "Retención de datos",
+        customRules: "Reglas personalizables",
+        realTimeApi: "API de decisión en tiempo\nreal",
+        alerts: "Alertas y gestión de casos",
+        customModels: "Modelos entrenados con\ntus datos",
+        dedicatedDeploy: "Despliegue dedicado",
+        supportChannel: "Canal de soporte",
+        accountManager: "Gerente de cuenta",
+        sla: "SLA de disponibilidad",
+        onboarding: "Acompañamiento en la\nintegración"
+      },
+      values: {
+        custom: "A la medida",
+        unlimited: "Ilimitados",
+        "6months": "6 meses",
+        "12months": "12 meses",
+        "24months": "24 meses",
+        "36months": "36 meses",
+        email: "Correo",
+        businessHours: "Horario hábil",
+        priority: "Prioritario",
+        dedicated247: "24/7 dedicado"
+      }
+    },
   },
   heroInfo: {
     titleStart: "Mira qué habría detenido",

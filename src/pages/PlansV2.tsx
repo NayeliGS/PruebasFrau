@@ -8,7 +8,7 @@ export const PlansV2 = () => {
       
       <Navbar />
 
-      <main className="flex-grow flex flex-col items-center w-full relative z-10 px-0 lg:px-6 pb-20 gap-32">
+      <main className="flex-grow flex flex-col items-center w-full relative z-10">
         
         <HeroPlans />
         
