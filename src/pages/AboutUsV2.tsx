@@ -2,7 +2,7 @@ import { Navbar } from "../components/Designers-v2/Shared/Navbar";
 import { Footer } from "../components/Designers-v2/Shared/Footer";
 import { HeroAbout } from "../components/Designers-v2/AboutUs/HeroAbout";
 import { PartnersAbout } from "../components/Designers-v2/AboutUs/PartnersAbout";
-import { PilotCTA } from "../components/Designers-v2/Shared/PilotCTA";
+
 
 export const AboutUsV2 = () => {
   return (
